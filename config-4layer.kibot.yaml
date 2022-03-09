@@ -86,7 +86,7 @@ outputs:
       create_gerber_job_file: true
       use_gerber_x2_attributes: false
       use_gerber_net_attributes: false
-      output: '%f.%i'
+      output: "%f%i.%x"
 
     layers:
       - layer: F.Cu
