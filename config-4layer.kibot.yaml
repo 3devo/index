@@ -23,7 +23,7 @@ outputs:
       csv:
         hide_pcb_info: true
         hide_stats_info: true
-      format: CSV
+      format: XLSX
 
   - name: 'html_bom'
     comment: 'HTML BOM'
@@ -66,7 +66,7 @@ outputs:
   - name: 'gerbers'
     comment: "Gerbers for the board house"
     type: gerber
-    dir: gerbers
+    dir: Gerbers
     options:
       # generic layer options
       exclude_edge_layer: true
@@ -89,25 +89,24 @@ outputs:
       output: '%f.%i'
 
     layers:
-      # When Moving to Four Layer, Set G2L and G3L as the suffixes
       - layer: F.Cu
-        suffix: GTL
+        suffix: gbr
       - layer: In1.Cu
-        suffix: G2L
+        suffix: gbr
       - layer: In2.Cu
-        suffix: G3L
+        suffix: gbr
       - layer: B.Cu
-        suffix: GBL
+        suffix: gbr
       - layer: F.SilkS
-        suffix: GTO
+        suffix: gbr
       - layer: B.SilkS
-        suffix: GBO
+        suffix: gbr
       - layer: F.Mask
-        suffix: GTS
+        suffix: gbr
       - layer: B.Mask
-        suffix: GBS
+        suffix: gbr
       - layer: Edge.Cuts
-        suffix: GKO
+        suffix: gbr
 
   - name: 'drill_file'
     comment: 'Drill file for Board House'
@@ -135,11 +134,11 @@ outputs:
   - name: 'pick_and_place_file'
     comment: 'Pick and Place Location File'
     type: position
-    dir: gerbers
+    dir: Pick and place
     options:
       format: CSV
 
   - name: 'step_file'
     comment: 'STEP file generation'
     type: step
-    dir: .
+    dir: Renders
