@@ -36,7 +36,7 @@ jobs:
     - name: Prepare gerber
       run: |
         cd pnp/pcb/mobo/export/gerbers
-        zip -r -j ../pnp_mobo_gerbers.zip *
+        zip -r -j pnp_mobo_gerbers.zip *
         
     - name: Prepare Output Artifact
       run: |
