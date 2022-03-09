@@ -1,32 +1,12 @@
 name: generate-mobo-pcb-artifacts
 
 on:
-  push:
-    paths:
-    - 'pnp/pcb/**.kicad_sch'
-    - 'pnp/pcb/**.kicad_pcb'
-    - 'pnp/pcb/**.kibot.yaml'
-    - '.github/workflows/generate-mobo-pcb-artifacts.yaml'
-    - '**.kibot.yaml'
-  pull_request:
-    paths:
-    - 'pnp/pcb/**.sch'
-    - 'pnp/pcb/**.kicad_pcb'
-    - 'pnp/pcb/**.kibot.yaml'
-    - '.github/workflows/generate-mobo-pcb-artifacts.yaml'
-    - '**.kibot.yaml'
   release:
     types: [ published ]  
   workflow_dispatch:
-    inputs:
-      version:
-        description: "Design version"
-        required: true
-        default: "pre-release"
     
-env:
-  repo: index-machines/index
-  main_branch: master
+#env:
+# key: value
 
 jobs:
   generate-artifacts:
@@ -91,54 +71,6 @@ jobs:
       with:
         name: pnp_mobo_output
         path: pnp/pcb/mobo/export
-
-    - name: Run ringLight KiBot
-      run: |
-        cd pnp/pcb/ringLight 
-        rm -rf export/     
-        kibot -c ../../../config-2layer.kibot.yaml -e ringLight.kicad_sch -b ringLight.kicad_pcb -d export
-
-    # Splitting this out to ensure a failed kibot run will mark a check as failed.
-    - name: Compress ringLight Gerbers for PCB Fab
-      run: |
-        cd pnp/pcb/ringLight/export/gerbers
-        zip -r -j ../pnp_ringLight_gerbers.zip *
-        
-    - name: Prepare Output Artifact
-      if: github.event_name == 'release'    
-      run: |
-        cd pnp/pcb/ringLight/export/
-        zip -r -j ../pnp_ringLight_files.zip *
-
-    - name: upload ringLight results
-      uses: actions/upload-artifact@v2
-      with:
-        name: pnp_ringLight_output
-        path: pnp/pcb/ringLight/export
-
-    - name: Run datum KiBot
-      run: |
-        cd pnp/pcb/datum 
-        rm -rf export/     
-        kibot -c ../../../config-2layer.kibot.yaml -e datum.kicad_sch -b datum.kicad_pcb -d export
-
-    # Splitting this out to ensure a failed kibot run will mark a check as failed.
-    - name: Compress datum Gerbers for PCB Fab
-      run: |
-        cd pnp/pcb/datum/export/gerbers
-        zip -r -j ../pnp_datum_gerbers.zip *
-
-    - name: Prepare Output Artifact
-      if: github.event_name == 'release'    
-      run: |
-        cd pnp/pcb/datum/export/
-        zip -r -j ../pnp_datum_files.zip *
-
-    - name: upload datum results
-      uses: actions/upload-artifact@v2
-      with:
-        name: pnp_datum_output
-        path: pnp/pcb/datum/export
 
     - name: Upload Artifacts to Release
       uses: softprops/action-gh-release@v1
