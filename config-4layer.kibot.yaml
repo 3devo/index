@@ -83,30 +83,16 @@ outputs:
       subtract_mask_from_silk: false
       use_protel_extensions: false
       gerber_precision: 4.6
-      create_gerber_job_file: true
+      create_gerber_job_file: false
       use_gerber_x2_attributes: false
       use_gerber_net_attributes: false
-      output: "%f%i.%x"
+      #output: ".gbr"
 
     layers:
       - layer: F.Cu
-        suffix: gbr
+        suffix: F_Cu.gbr
       - layer: In1.Cu
-        suffix: gbr
-      - layer: In2.Cu
-        suffix: gbr
-      - layer: B.Cu
-        suffix: gbr
-      - layer: F.SilkS
-        suffix: gbr
-      - layer: B.SilkS
-        suffix: gbr
-      - layer: F.Mask
-        suffix: gbr
-      - layer: B.Mask
-        suffix: gbr
-      - layer: Edge.Cuts
-        suffix: gbr
+        suffix: B_Cu.gbr
 
   - name: 'drill_file'
     comment: 'Drill file for Board House'
