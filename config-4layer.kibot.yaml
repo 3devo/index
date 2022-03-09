@@ -13,12 +13,12 @@ outputs:
   - name: 'ibom'
     comment: 'Interactive Bill of Materials'
     type: ibom
-    dir: ibom
+    dir: Bill of materials
 
   - name: 'bom'
     comment: 'Bill of Materials'
     type: bom
-    dir: .
+    dir: Bill of materials
     options:
       csv:
         hide_pcb_info: true
