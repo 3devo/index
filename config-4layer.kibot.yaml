@@ -95,9 +95,9 @@ outputs:
         suffix: F_Mask
       - layer: B.Mask
         suffix: B_Mask
-      - layer: F.Paste	
-        suffix: F_Paste	
-      - layer: B.Paste	
+      - layer: F.Paste
+        suffix: F_Paste
+      - layer: B.Paste
         suffix: B_Paste
       - layer: Edge.Cuts
         suffix: Edge_Cuts
