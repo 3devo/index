@@ -14,27 +14,17 @@ jobs:
     container: setsoft/kicad_auto:dev_k6
       
     steps:
-    - name: Update system repositories, Install Required Libraries and Initialize git-lfs
+    - name: Update system repositories and install required libraries
       run: |
         apt update
         apt -y install git zip
 
     - name: Checkout Repository
-      uses: actions/checkout@v2
-        
-    - name: Extract branch name
-      shell: bash
-      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-      id: extract_branch            
+      uses: actions/checkout@v2     
 
-    - name: Update the PCBs with on default branch with git hash
-      if: github.event_name == 'release' || steps.extract_branch.outputs.branch == env.main_branch
+    - name: Update the PCBs with string
       run: |
-        export COMMIT=$(git rev-parse --short HEAD)
-        echo "COMMIT = ${COMMIT}"    
-        echo "ref: ${{ github.ref }}"
-        echo "default: ${{ env.default }}"
-        sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/mobo/mobo.kicad_pcb
+        sed -i "s!<<hash>>!"testje"!" pnp/pcb/mobo/mobo.kicad_pcb
 
     - name: Prepare pnp mobo Artifacts
       run: |
