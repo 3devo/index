@@ -51,6 +51,7 @@ jobs:
 
     - name: Upload Artifacts to Release
       uses: softprops/action-gh-release@v1
+      if: github.event_name == 'release'
       with:
         files: |
           pnp/pcb/mobo/pnp_mobo_files.zip
