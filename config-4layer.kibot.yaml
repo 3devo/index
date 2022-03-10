@@ -20,8 +20,17 @@ outputs:
     type: kibom
     dir: Bill of materials
     options: 
-      conf: config.kibom.ini
-
+      conf:
+        columns:
+          field: Qty
+          field: Reference
+          field: Value
+          field: Footprint
+          field: Manufacturer
+          field: Partnumber
+        number_rows: false
+        format: XLSX
+          
   - name: 'print_sch'
     comment: "Print schematic (PDF)"
     type: pdf_sch_print
