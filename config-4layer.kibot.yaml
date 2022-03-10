@@ -17,12 +17,9 @@ outputs:
 
   - name: 'bom'
     comment: 'Bill of Materials'
-    type: bom
+    type: kibom
     dir: Bill of materials
     options:
-      csv:
-        hide_pcb_info: true
-        hide_stats_info: true
       format: XLSX
 
   - name: 'print_sch'
