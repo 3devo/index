@@ -21,6 +21,11 @@ outputs:
     dir: Bill of materials
     options: 
       format: XLSX
+   
+  - name: 'bomcsv'
+    comment: 'Bill of Materials csv'
+    type: bom
+    dir: Bill of materials
           
   - name: 'print_sch'
     comment: "Print schematic (PDF)"
