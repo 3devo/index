@@ -19,18 +19,8 @@ outputs:
     comment: 'Bill of Materials'
     type: kibom
     dir: Bill of materials
-    
     options: 
       format: XLSX
-      conf:
-        columns:
-          - field: Quantity Per PCB
-          - field: References
-          - field: Value
-          - field: Footprint
-          - field: Manufacturer
-          #- field: Partnumber
-        number_rows: false
           
   - name: 'print_sch'
     comment: "Print schematic (PDF)"
