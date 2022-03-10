@@ -19,7 +19,8 @@ outputs:
     comment: 'Bill of Materials'
     type: kibom
     dir: Bill of materials
-    options: config.kibom.ini
+    options: 
+      conf: config.kibom.ini
 
   - name: 'print_sch'
     comment: "Print schematic (PDF)"
