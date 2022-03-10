@@ -23,7 +23,7 @@ outputs:
       conf:
         columns:
           - field: Quantity Per PCB
-          - field: Reference
+          - field: References
           - field: Value
           - field: Footprint
           - field: Manufacturer
