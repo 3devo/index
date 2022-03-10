@@ -20,7 +20,7 @@ outputs:
     type: kibom
     dir: Bill of materials
     options:
-      format: XLSX
+      conf: config.kibom.ini
 
   - name: 'print_sch'
     comment: "Print schematic (PDF)"
