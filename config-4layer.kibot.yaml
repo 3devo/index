@@ -19,6 +19,7 @@ outputs:
     comment: 'Bill of Materials'
     type: kibom
     dir: Bill of materials
+    format: XLSX
     options: 
       conf:
         columns:
@@ -27,9 +28,8 @@ outputs:
           - field: Value
           - field: Footprint
           #- field: Manufacturer
-          - field: Partnumber
+          #- field: Partnumber
         number_rows: false
-        format: XLSX
           
   - name: 'print_sch'
     comment: "Print schematic (PDF)"
