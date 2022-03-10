@@ -17,10 +17,10 @@ outputs:
 
   - name: 'bom'
     comment: 'Bill of Materials'
-    type: kibom
+    type: bom
     dir: Bill of materials
     options: 
-      format: XLSX
+      format: xlsx
       columns:
         - Quantity Per PCB
         - Value
