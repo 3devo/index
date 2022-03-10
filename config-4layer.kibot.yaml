@@ -21,11 +21,15 @@ outputs:
     dir: Bill of materials
     options: 
       format: XLSX
-   
-  - name: 'xyrs'
-    comment: 'Bill of Materials csv'
-    type: xyrs
-    dir: Bill of materials
+      columns:
+        - Quantity Per PCB
+        - Value
+        - Footprint
+        - Manufacturer
+        - Partnumber
+      xlsx:
+        - col_colors: false
+        - logo: false
           
   - name: 'print_sch'
     comment: "Print schematic (PDF)"
