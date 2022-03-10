@@ -26,7 +26,7 @@ outputs:
           - field: References
           - field: Value
           - field: Footprint
-          - field: Manufacturer
+          #- field: Manufacturer
           - field: Partnumber
         number_rows: false
         format: XLSX
