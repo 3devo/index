@@ -22,12 +22,12 @@ outputs:
     options: 
       conf:
         columns:
-          field: Qty
-          field: Reference
-          field: Value
-          field: Footprint
-          field: Manufacturer
-          field: Partnumber
+          - field: Qty
+          - field: Reference
+          - field: Value
+          - field: Footprint
+          - field: Manufacturer
+          - field: Partnumber
         number_rows: false
         format: XLSX
           
