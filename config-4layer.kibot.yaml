@@ -28,7 +28,7 @@ outputs:
           - field: References
           - field: Value
           - field: Footprint
-          #- field: Manufacturer
+          - field: manufacturer
           #- field: Partnumber
         number_rows: false
           
