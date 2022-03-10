@@ -22,9 +22,9 @@ outputs:
     options: 
       format: XLSX
    
-  - name: 'bomcsv'
+  - name: 'xyrs'
     comment: 'Bill of Materials csv'
-    type: bom
+    type: xyrs
     dir: Bill of materials
           
   - name: 'print_sch'
