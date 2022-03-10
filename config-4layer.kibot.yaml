@@ -20,7 +20,7 @@ outputs:
     type: bom
     dir: Bill of materials
     options: 
-      format: xlsx
+      format: XLSX
       columns:
         - Quantity Per PCB
         - Value
