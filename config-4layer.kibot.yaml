@@ -19,8 +19,9 @@ outputs:
     comment: 'Bill of Materials'
     type: kibom
     dir: Bill of materials
-    format: XLSX
+    
     options: 
+      format: XLSX
       conf:
         columns:
           - field: Quantity Per PCB
