@@ -22,7 +22,7 @@ outputs:
     options: 
       conf:
         columns:
-          - field: Qty
+          - field: Quantity Per PCB
           - field: Reference
           - field: Value
           - field: Footprint
