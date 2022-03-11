@@ -28107,6 +28107,9 @@
   (gr_text "<<hash>>" (at 83.66 130.07 -90) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-000060693ef2)
     (effects (font (size 1 1) (thickness 0.15) italic) (justify left))
   )
+  (gr_text "@version@" (at 115.09 73.62) (layer "F.SilkS") (tstamp 5c120615-7b34-4376-98c4-994ae5b3b131)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
 
   (segment (start 102.49 163.25) (end 102.27 163.03) (width 0.25) (layer "F.Cu") (net 1) (tstamp 00036662-fa99-4284-af32-cf49578c390a))
   (segment (start 78.64 81.58) (end 78 81.58) (width 2) (layer "F.Cu") (net 1) (tstamp 028825a5-a5a1-4471-a5f1-08090406bcd8))
