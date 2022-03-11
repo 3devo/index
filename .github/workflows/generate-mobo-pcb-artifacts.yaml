@@ -18,6 +18,7 @@ jobs:
       run: |
         apt update
         apt -y install git zip
+        apt-get install python3-pip
         pip3 install -e .
 
     - name: Checkout Repository
