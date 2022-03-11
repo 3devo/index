@@ -8,6 +8,11 @@ preflight:
   run_drc: false
   check_zone_fills: true
   ignore_unconnected: false
+  
+  pcb_replace:
+    replace_tags:
+      - tag: 'version'
+        text: 'testje'
 
 outputs:
   - name: 'ibom'
