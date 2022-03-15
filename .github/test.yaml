@@ -5,8 +5,8 @@ on:
     types: [ published ]  
   workflow_dispatch:
     
-#env:
-# key: value
+env:
+ time_zone: Europe/Amsterdam
 
 jobs:
   generate-artifacts:
@@ -23,9 +23,10 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2     
 
-    - name: Update the PCBs with string
-      run: |
-        sed -i "s!<<hash>>!"testje"!" pnp/pcb/mobo/mobo.kicad_pcb
+    - name: Get current date and time
+        id: date
+        run: echo "::set-output name=date::$(TZ='${{ env.time_zone }}' date +'%Y-%m-%d')"
+
 
     - name: Run KiBot
       run: |
