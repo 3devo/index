@@ -31,6 +31,23 @@
   )
 
   (setup
+    (stackup
+      (layer "F.SilkS" (type "Top Silk Screen"))
+      (layer "F.Paste" (type "Top Solder Paste"))
+      (layer "F.Mask" (type "Top Solder Mask") (thickness 0.01))
+      (layer "F.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 1" (type "core") (thickness 0.48) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "In1.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 2" (type "prepreg") (thickness 0.48) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "In2.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 3" (type "core") (thickness 0.48) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "B.Cu" (type "copper") (thickness 0.035))
+      (layer "B.Mask" (type "Bottom Solder Mask") (thickness 0.01))
+      (layer "B.Paste" (type "Bottom Solder Paste"))
+      (layer "B.SilkS" (type "Bottom Silk Screen"))
+      (copper_finish "None")
+      (dielectric_constraints no)
+    )
     (pad_to_mask_clearance 0)
     (grid_origin 67.19 64.77)
     (pcbplotparams
@@ -67,6 +84,8 @@
       (outputdirectory "out/")
     )
   )
+
+  (property "version" "1.0.0")
 
   (net 0 "")
   (net 1 "GND")
@@ -28109,6 +28128,9 @@
   )
   (gr_text "@version@" (at 115.09 73.62) (layer "F.SilkS") (tstamp 5c120615-7b34-4376-98c4-994ae5b3b131)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
+  (gr_text "${version}" (at 69.39 126.22) (layer "F.SilkS") (tstamp c0ba1487-370a-4b2b-a0e5-bd2b9fdcdb36)
+    (effects (font (size 1 1) (thickness 0.15) italic) (justify left))
   )
 
   (segment (start 102.49 163.25) (end 102.27 163.03) (width 0.25) (layer "F.Cu") (net 1) (tstamp 00036662-fa99-4284-af32-cf49578c390a))
