@@ -12,7 +12,7 @@ preflight:
     - name: 'version'
       command: 'echo 1.2.3'
     - name: 'date'
-      command: '${{ steps.date.outputs.date }}'
+      command: '$(date +'%Y-%m-%d')'
       
 outputs:
   - name: 'ibom'
