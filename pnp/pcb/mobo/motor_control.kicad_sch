@@ -5,9 +5,9 @@
   (paper "A4")
 
   (title_block
-    (title "Motors")
+    (title "Index Mobo")
     (date "2021-02-19")
-    (rev "003")
+    (rev "${version}")
   )
 
   (lib_symbols
