@@ -18,7 +18,6 @@ jobs:
       run: |
         apt update
         apt -y install git zip
-        pip install -e .
 
     - name: Checkout Repository
       uses: actions/checkout@v2     
