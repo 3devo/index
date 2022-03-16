@@ -1,0 +1,140 @@
+ERC report (Wed Mar 16 10:55:00 2022, Encoding UTF8)
+
+***** Sheet /
+[lib_symbol_issues]: Symbol 'Ferrite_Bead' not found in symbol library 'Device'.
+    ; Severity: warning
+    @(106.68 mm, 23.50 mm): Symbol FB1 [Ferrite_Bead]
+
+***** Sheet /misc_output/
+
+***** Sheet /misc_output/Mosfet 1/
+
+***** Sheet /misc_output/sheet603D334C/
+
+***** Sheet /misc_output/sheet603D5C79/
+
+***** Sheet /misc_output/sheet603D8582/
+
+***** Sheet /usb/
+
+***** Sheet /power/
+[lib_symbol_issues]: Symbol 'CP' not found in symbol library 'Device'.
+    ; Severity: warning
+    @(67.31 mm, 97.16 mm): Symbol C27 [CP]
+
+***** Sheet /motor_control/
+
+***** Sheet /motor_control/Motor X/
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Open' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(208.91 mm, 85.72 mm): Symbol JP15 [SolderJumper_3_Open]
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Bridged12' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(208.91 mm, 106.68 mm): Symbol JP16 [SolderJumper_3_Bridged12]
+[lib_symbol_issues]: Symbol 'CP' not found in symbol library 'Device'.
+    ; Severity: warning
+    @(153.67 mm, 59.05 mm): Symbol C20 [CP]
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Open' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(182.25 mm, 85.72 mm): Symbol JP13 [SolderJumper_3_Open]
+
+***** Sheet /motor_control/Motor Z/
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Open' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(208.91 mm, 85.72 mm): Symbol JP15 [SolderJumper_3_Open]
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Bridged12' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(208.91 mm, 106.68 mm): Symbol JP16 [SolderJumper_3_Bridged12]
+[lib_symbol_issues]: Symbol 'CP' not found in symbol library 'Device'.
+    ; Severity: warning
+    @(153.67 mm, 59.05 mm): Symbol C20 [CP]
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Open' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(182.25 mm, 85.72 mm): Symbol JP13 [SolderJumper_3_Open]
+
+***** Sheet /motor_control/Motor Left/
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Open' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(208.91 mm, 85.72 mm): Symbol JP15 [SolderJumper_3_Open]
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Bridged12' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(208.91 mm, 106.68 mm): Symbol JP16 [SolderJumper_3_Bridged12]
+[lib_symbol_issues]: Symbol 'CP' not found in symbol library 'Device'.
+    ; Severity: warning
+    @(153.67 mm, 59.05 mm): Symbol C20 [CP]
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Open' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(182.25 mm, 85.72 mm): Symbol JP13 [SolderJumper_3_Open]
+
+***** Sheet /motor_control/Motor Right/
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Open' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(208.91 mm, 85.72 mm): Symbol JP15 [SolderJumper_3_Open]
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Bridged12' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(208.91 mm, 106.68 mm): Symbol JP16 [SolderJumper_3_Bridged12]
+[lib_symbol_issues]: Symbol 'CP' not found in symbol library 'Device'.
+    ; Severity: warning
+    @(153.67 mm, 59.05 mm): Symbol C20 [CP]
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Open' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(182.25 mm, 85.72 mm): Symbol JP13 [SolderJumper_3_Open]
+
+***** Sheet /motor_control/Motor Y/
+[lib_symbol_issues]: Symbol 'CP' not found in symbol library 'Device'.
+    ; Severity: warning
+    @(165.74 mm, 48.26 mm): Symbol C21 [CP]
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Open' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(146.05 mm, 127.64 mm): Symbol JP19 [SolderJumper_3_Open]
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Open' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(119.38 mm, 127.64 mm): Symbol JP17 [SolderJumper_3_Open]
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Bridged12' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(146.05 mm, 148.59 mm): Symbol JP20 [SolderJumper_3_Bridged12]
+
+***** Sheet /motor_control/Motor AUX/
+[lib_symbol_issues]: Symbol 'CP' not found in symbol library 'Device'.
+    ; Severity: warning
+    @(165.74 mm, 48.26 mm): Symbol C21 [CP]
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Open' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(146.05 mm, 127.64 mm): Symbol JP19 [SolderJumper_3_Open]
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Open' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(119.38 mm, 127.64 mm): Symbol JP17 [SolderJumper_3_Open]
+[lib_symbol_issues]: Symbol 'SolderJumper_3_Bridged12' has been modified in library 'Jumper'.
+    ; Severity: warning
+    @(146.05 mm, 148.59 mm): Symbol JP20 [SolderJumper_3_Bridged12]
+
+***** Sheet /misc_input/
+[lib_symbol_issues]: Symbol 'Ferrite_Bead' not found in symbol library 'Device'.
+    ; Severity: warning
+    @(201.93 mm, 69.85 mm): Symbol FB2 [Ferrite_Bead]
+[similar_labels]: Labels are similar (lower/upper case difference only)
+    ; Severity: warning
+    @(59.05 mm, 77.47 mm): Hierarchical Label 'X_LIMIT'
+    @(97.79 mm, 154.94 mm): Label 'X_Limit'
+[similar_labels]: Labels are similar (lower/upper case difference only)
+    ; Severity: warning
+    @(59.05 mm, 88.90 mm): Hierarchical Label 'Y_LIMIT'
+    @(52.07 mm, 177.80 mm): Label 'Y_Limit'
+[similar_labels]: Labels are similar (lower/upper case difference only)
+    ; Severity: warning
+    @(60.33 mm, 134.62 mm): Hierarchical Label 'A_LIMIT'
+    @(97.79 mm, 162.56 mm): Label 'A_Limit'
+[similar_labels]: Labels are similar (lower/upper case difference only)
+    ; Severity: warning
+    @(59.69 mm, 123.19 mm): Hierarchical Label 'R_LIMIT'
+    @(52.07 mm, 172.72 mm): Label 'R_Limit'
+[similar_labels]: Labels are similar (lower/upper case difference only)
+    ; Severity: warning
+    @(59.69 mm, 111.76 mm): Hierarchical Label 'L_LIMIT'
+    @(97.79 mm, 73.66 mm): Label 'L_Limit'
+[similar_labels]: Labels are similar (lower/upper case difference only)
+    ; Severity: warning
+    @(59.05 mm, 100.33 mm): Hierarchical Label 'Z_LIMIT'
+    @(52.07 mm, 175.26 mm): Label 'Z_Limit'
+
+ ** ERC messages: 33  Errors 0  Warnings 33
