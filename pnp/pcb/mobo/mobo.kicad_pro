@@ -2,7 +2,7 @@
   "board": {
     "design_settings": {
       "defaults": {
-        "board_outline_line_width": 0.049999999999999996,
+        "board_outline_line_width": 0.15,
         "copper_line_width": 0.19999999999999998,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
@@ -33,11 +33,11 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 3.35,
+          "width": 1.35
         },
-        "silk_line_width": 0.12,
+        "silk_line_width": 0.15,
         "silk_text_italic": false,
         "silk_text_size_h": 1.0,
         "silk_text_size_v": 1.0,
@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.25
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -64,7 +64,7 @@
         "annular_width": "error",
         "clearance": "error",
         "copper_edge_clearance": "error",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "ignore",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
@@ -86,8 +86,8 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
@@ -107,25 +107,23 @@
         "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.0,
-        "min_copper_edge_clearance": 0.024999999999999998,
+        "min_copper_edge_clearance": 0.09999999999999999,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_silk_clearance": 0.0,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.127,
+        "min_track_width": 0.152,
         "min_via_annular_width": 0.049999999999999996,
-        "min_via_diameter": 0.6,
+        "min_via_diameter": 0.39999999999999997,
         "use_height_for_length_calcs": true
       },
       "track_widths": [
         0.0,
-        0.25,
-        0.5,
-        1.0,
-        2.0,
-        3.0
+        0.1524,
+        0.254,
+        0.508
       ],
       "via_dimensions": [
         {
@@ -133,8 +131,8 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.8,
-          "drill": 0.4
+          "diameter": 3.0,
+          "drill": 2.54
         }
       ],
       "zones_allow_external_fillets": false,
@@ -356,26 +354,26 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "mobo.kicad_pro",
+    "filename": "GD-BLDC-driver.kicad_pro",
     "version": 1
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12.0,
-        "clearance": 0.2,
+        "clearance": 0.1778,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.25,
+        "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "track_width": 0.1778,
+        "via_diameter": 0.762,
+        "via_drill": 0.381,
         "wire_width": 6.0
       }
     ],
@@ -388,7 +386,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "mobo.net",
+      "netlist": "",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
@@ -400,18 +398,7 @@
     "drawing": {
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
-      "field_names": [
-        {
-          "name": "Manufacturer",
-          "url": false,
-          "visible": false
-        },
-        {
-          "name": "Partnumber",
-          "url": false,
-          "visible": false
-        }
-      ],
+      "field_names": [],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -446,68 +433,28 @@
   },
   "sheets": [
     [
-      "7255cbd1-8d38-4545-be9a-7fc5488ef942",
+      "ca5a4651-0d1d-441b-b17d-01518ef3b656",
       ""
     ],
     [
-      "00000000-0000-0000-0000-00005eb0c492",
-      "misc_output"
+      "3880cd62-2323-4911-a7f9-6a1f5f304524",
+      "Driver"
     ],
     [
-      "00000000-0000-0000-0000-0000603a60ac",
-      "Mosfet 1"
+      "dafb9ede-bbc7-4f4f-8b1b-ecb9aab2c0ed",
+      "Mosfets"
     ],
     [
-      "00000000-0000-0000-0000-0000603d334f",
-      "sheet603D334C"
+      "2041fcf2-c50d-41bb-ae4f-534d4d3cec35",
+      "Miscellaneous"
     ],
     [
-      "00000000-0000-0000-0000-0000603d5c7c",
-      "sheet603D5C79"
+      "eae36b4b-237b-41e5-b603-25216a1d474f",
+      "Inputs"
     ],
     [
-      "00000000-0000-0000-0000-0000603d8585",
-      "sheet603D8582"
-    ],
-    [
-      "00000000-0000-0000-0000-00005eb0c6b9",
-      "usb"
-    ],
-    [
-      "00000000-0000-0000-0000-00005eb15d5b",
-      "power"
-    ],
-    [
-      "00000000-0000-0000-0000-00005eb0c248",
-      "motor_control"
-    ],
-    [
-      "00000000-0000-0000-0000-0000602a1f7c",
-      "Motor X"
-    ],
-    [
-      "00000000-0000-0000-0000-000060347cfb",
-      "Motor Z"
-    ],
-    [
-      "00000000-0000-0000-0000-00006034863b",
-      "Motor Left"
-    ],
-    [
-      "00000000-0000-0000-0000-000060348ea3",
-      "Motor Right"
-    ],
-    [
-      "00000000-0000-0000-0000-000060582104",
-      "Motor Y"
-    ],
-    [
-      "00000000-0000-0000-0000-00006057b851",
-      "Motor AUX"
-    ],
-    [
-      "00000000-0000-0000-0000-00005eb0c5a0",
-      "misc_input"
+      "abc1e50f-7ed6-49d7-895b-3556759e8bb1",
+      "Power"
     ]
   ],
   "text_variables": {

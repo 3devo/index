@@ -2,8 +2,24 @@
 kibot:
   version: 1
 
+global:
+  output: '%f_%r_%i%g.%x' #projectname_version_outputtype_file_id.extension
+
+variants:
+  - name: 'SR'
+    comment: 'GP20 Shredder'
+    type: kibom
+    file_id: '_SR'
+    variant: SR
+
+  - name: 'GR'
+    comment: 'GP20 Granulator'
+    type: kibom
+    file_id: '_GR'
+    variant: GR
+
 preflight:
-  run_erc: true
+  run_erc: false
   update_xml: true
   run_drc: false
   check_zone_fills: true
@@ -13,11 +29,7 @@ preflight:
       command: 'echo 1.2.3'
 
 outputs:
-  - name: 'ibom'
-    comment: 'Interactive Bill of Materials'
-    type: ibom
-    dir: Bill of materials
-
+  
   - name: 'bom'
     comment: 'Bill of Materials'
     type: bom
@@ -26,6 +38,7 @@ outputs:
       format: XLSX
       columns:
         - Quantity Per PCB
+        - References
         - Value
         - Footprint
         - Manufacturer
@@ -33,115 +46,46 @@ outputs:
       xlsx:
         col_colors: false
         logo: false
-          
-  - name: 'print_sch'
-    comment: "Print schematic (PDF)"
-    type: pdf_sch_print
-    dir: Schematic
+        generate_dnf: true
+        title: Bill of materials
+      count_smd_tht: true
+
+  - name: 'position'
+    comment: "Pick and place file, XYRS style"
+    type: bom
     options:
-      output: Schematic.pdf
-
-  - name: 'print_front'
-    comment: "Print F.Cu+Dwgs.User"
-    type: pdf_pcb_print
-    dir: Layout
-    options:
-      output_name: Layout.pdf
-      separated: true
-    layers:
-      - layer: F.Cu
-        description: 'Front Copper'
-      - layer: In1.Cu
-        description: 'Layer 2'
-      - layer: In2.Cu
-        description: 'Layer 3'
-      - layer: B.Cu
-        description: 'Back Copper'
-      - layer: F.SilkS
-        description: 'Front Silk'
-      - layer: B.SilkS
-        description: 'Rear Silk'
-
-  - name: 'gerbers'
-    comment: "Gerbers for the board house"
-    type: gerber
-    dir: Gerbers
-    options:
-      # generic layer options
-      exclude_edge_layer: true
-      exclude_pads_from_silkscreen: false
-      use_aux_axis_as_origin: false
-      plot_sheet_reference: false
-      plot_footprint_refs: true
-      plot_footprint_values: true
-      force_plot_invisible_refs_vals: false
-      tent_vias: true
-
-      # gerber options
-      line_width: 0.1
-      subtract_mask_from_silk: false
-      use_protel_extensions: false
-      gerber_precision: 4.6
-      create_gerber_job_file: false
-      use_gerber_x2_attributes: false
-      use_gerber_net_attributes: false
-      #output: ".gbr"
-
-    layers:
-      - layer: F.Cu
-        suffix: F_Cu
-      - layer: In1.Cu
-        suffix: In1_Cu
-      - layer: In2.Cu
-        suffix: In2_Cu
-      - layer: B.Cu
-        suffix: B_Cu
-      - layer: F.SilkS
-        suffix: F_SilkS
-      - layer: B.SilkS
-        suffix: B_SilkS
-      - layer: F.Mask
-        suffix: F_Mask
-      - layer: B.Mask
-        suffix: B_Mask
-      - layer: F.Paste
-        suffix: F_Paste
-      - layer: B.Paste
-        suffix: B_Paste
-      - layer: Edge.Cuts
-        suffix: Edge_Cuts
-
-  - name: 'drill_file'
-    comment: 'Drill file for Board House'
-    type: excellon
-    dir: Gerbers
-    options:
-      metric_units: false
-      pth_and_npth_single_file: true
-
-  - name: board_top
-    comment: "Top layer view"
-    type: pcbdraw
-    dir: Renders
-    options:
-      format: png
-
-  - name: board_bottom
-    comment: "Bottom layer view"
-    type: pcbdraw
-    dir: Renders
-    options:
-      format: png
-      bottom: true
-
-  - name: 'pick_and_place_file'
-    comment: 'Pick and Place Location File'
-    type: position
-    dir: Pick and place
-    options:
-      format: CSV
-
-  - name: 'step_file'
-    comment: 'STEP file generation'
-    type: step
-    dir: Renders
+      output: '%f.XYRS'
+      units: mils
+      group_fields: []
+      sort_style: ref
+      use_aux_axis_as_origin: true
+      ignore_dnf: false
+      footprint_populate_values: '0,1'
+      footprint_type_values: '1,2,0'
+      csv:
+        separator: '	'
+        hide_pcb_info: true
+        hide_stats_info: true
+        hide_header: false
+      columns:
+        - field: References
+          name: Designator
+        - field: Footprint X
+          name: X-Loc
+        - field: Footprint Y
+          name: Y-Loc
+        - field: Footprint Rot
+          name: Rotation
+        - field: Footprint Side
+          name: Side
+        - field: Footprint Type
+          name: Type
+        - field: Footprint X-Size
+          name: X-Size
+        - field: Footprint Y-Size
+          name: Y-Size
+        - field: Value
+        - field: Footprint
+        - field: Footprint Populate
+          name: Populate
+        - field: MPN

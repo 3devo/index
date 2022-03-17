@@ -1,0 +1,2435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/workspaces/index/pnp/pcb/mobo/mobo.kicad_sch</source>
+    <date>Wed Mar 16 21:37:14 2022</date>
+    <tool>Eeschema 6.0.2+dfsg-1~bpo11+1</tool>
+    <textvar name="version">1.2.3</textvar>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>GD BLDC blower driver</title>
+        <company>3devo</company>
+        <rev>v1.1</rev>
+        <date>2019-03-11</date>
+        <source>mobo.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/">
+      <title_block>
+        <title>GD BLDC blower driver</title>
+        <company>3devo</company>
+        <rev>v1.1</rev>
+        <date>2019-03-11</date>
+        <source>Driver.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Mosfets/" tstamps="/dafb9ede-bbc7-4f4f-8b1b-ecb9aab2c0ed/">
+      <title_block>
+        <title>GD BLDC blower driver</title>
+        <company>3devo</company>
+        <rev>v1.1</rev>
+        <date>2019-03-11</date>
+        <source>Mosfets.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Miscellaneous/" tstamps="/2041fcf2-c50d-41bb-ae4f-534d4d3cec35/">
+      <title_block>
+        <title>GD BLDC blower driver</title>
+        <company>3devo</company>
+        <rev>v1.1</rev>
+        <date>2019-03-11</date>
+        <source>Misc.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/">
+      <title_block>
+        <title>GD BLDC blower driver</title>
+        <company>3devo</company>
+        <rev>v1.1</rev>
+        <date>2019-03-11</date>
+        <source>Inputs.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/Power/" tstamps="/abc1e50f-7ed6-49d7-895b-3556759e8bb1/">
+      <title_block>
+        <title>GD BLDC blower driver</title>
+        <company>3devo</company>
+        <rev>v1.1</rev>
+        <date>2019-03-11</date>
+        <source>Power.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C5">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Murata</field>
+        <field name="Partnumber">GCM188L81H104KA57D</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Partnumber" value="GCM188L81H104KA57D"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="mobo.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005c8bb782</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>JST B8PS-VH</value>
+      <footprint>Connector_JST:JST_VH_B8PS-VH_1x08_P3.96mm_Horizontal</footprint>
+      <datasheet>http://www.jst-mfg.com/product/pdf/eng/eVH.pdf</datasheet>
+      <fields>
+        <field name="Function">Mixer</field>
+        <field name="Manufacturer">JST</field>
+        <field name="Partnumber">B8PS-VH(LF)(SN)</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Manufacturer" value="JST"/>
+      <property name="Function" value="Mixer"/>
+      <property name="Partnumber" value="B8PS-VH(LF)(SN)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="mobo.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005c90fe85</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>JST B5B-XH</value>
+      <footprint>Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical</footprint>
+      <fields>
+        <field name="Function">Blower</field>
+        <field name="Manufacturer">JST</field>
+        <field name="Partnumber">B5B-XH-A (LF)(SN)</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Manufacturer" value="JST"/>
+      <property name="Function" value="Blower"/>
+      <property name="Partnumber" value="B5B-XH-A (LF)(SN)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="mobo.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005cc9f7b0</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Murata</field>
+        <field name="Partnumber">GCM188L81H104KA57D</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Partnumber" value="GCM188L81H104KA57D"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>8d94f4b8-339d-4e35-912b-4b425f731cdc</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>1uF 16V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Partnumber">C0603C105K4RACAUTO</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Kemet"/>
+      <property name="Partnumber" value="C0603C105K4RACAUTO"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>bfa701b4-849e-4f6c-8d1a-0d257bc85782</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>1uF 35V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Samsung</field>
+        <field name="Partnumber">CL21B105KBFNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="Partnumber" value="CL21B105KBFNNNE"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>8311a87e-73cb-4139-ae0f-a28f26fe3c3b</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Murata</field>
+        <field name="Partnumber">GCM188L81H104KA57D</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Partnumber" value="GCM188L81H104KA57D"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>b636b148-3997-4d75-9860-4f069f6374f6</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Murata</field>
+        <field name="Partnumber">GCM188L81H104KA57D</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Partnumber" value="GCM188L81H104KA57D"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>a726d0c4-bb16-418e-9eb2-6071427dd404</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Murata</field>
+        <field name="Partnumber">GCM188L81H104KA57D</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Partnumber" value="GCM188L81H104KA57D"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>bfcc5e4c-8012-4766-b299-7e6884e42d29</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Murata</field>
+        <field name="Partnumber">GCM188L81H104KA57D</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Partnumber" value="GCM188L81H104KA57D"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>ca13821c-4cd3-4f9a-99c1-0ab8bf2e9b5a</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Murata</field>
+        <field name="Partnumber">GCM188L81H104KA57D</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Partnumber" value="GCM188L81H104KA57D"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>6f9068f5-e065-4cc3-9235-26d6909614ec</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>1uF 35V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Samsung</field>
+        <field name="Partnumber">CL21B105KBFNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="Partnumber" value="CL21B105KBFNNNE"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>8425f7bd-e847-45ca-8214-1038dcc05575</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>Led green</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>http://www.kingbrightusa.com/images/catalog/SPEC/APT2012SGC.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Kingston</field>
+        <field name="Partnumber">APT2012SGC</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <property name="Manufacturer" value="Kingston"/>
+      <property name="Partnumber" value="APT2012SGC"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>5c2def71-014c-4402-9efa-da93c99ccbc7</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>Led red</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>http://www.kingbrightusa.com/images/catalog/SPEC/APT2012SRCPRV.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Kingston</field>
+        <field name="Partnumber">APT2012SRCPRV</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <property name="Manufacturer" value="Kingston"/>
+      <property name="Partnumber" value="APT2012SRCPRV"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>7035ce09-60b8-4296-bfc1-ee52e0dd9e33</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>Testpoint</value>
+      <footprint>3devo_footprints:TestPoint_TE_RCT-0C_0805</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Config">dnp</field>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">RCT-0C</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="RCT-0C"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>30179927-d72f-414b-84bf-047c4ca1a309</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>Testpoint</value>
+      <footprint>3devo_footprints:TestPoint_TE_RCT-0C_0805</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Config">dnp</field>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">RCT-0C</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="RCT-0C"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>0e5b06e5-6c5e-4df3-a3b7-950840c08102</tstamps>
+    </comp>
+    <comp ref="J8">
+      <value>Testpoint</value>
+      <footprint>3devo_footprints:TestPoint_TE_RCT-0C_0805</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Config">dnp</field>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">RCT-0C</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="RCT-0C"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>78ea9001-1e98-447a-830c-c53b855eddfe</tstamps>
+    </comp>
+    <comp ref="J9">
+      <value>Testpoint</value>
+      <footprint>3devo_footprints:TestPoint_TE_RCT-0C_0805</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Config">dnp</field>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">RCT-0C</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="RCT-0C"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>e369b2bf-936b-4385-9273-1e39fdc858f6</tstamps>
+    </comp>
+    <comp ref="J10">
+      <value>Testpoint</value>
+      <footprint>3devo_footprints:TestPoint_TE_RCT-0C_0805</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Config">dnp</field>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">RCT-0C</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="RCT-0C"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>8ba9d17b-e1af-4faa-bd86-33740f5300e0</tstamps>
+    </comp>
+    <comp ref="J11">
+      <value>Testpoint</value>
+      <footprint>3devo_footprints:TestPoint_TE_RCT-0C_0805</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Config">dnp</field>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">RCT-0C</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="RCT-0C"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>d88cfd99-6749-47c0-b3b2-a5ba04549182</tstamps>
+    </comp>
+    <comp ref="J12">
+      <value>Testpoint</value>
+      <footprint>3devo_footprints:TestPoint_TE_RCT-0C_0805</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Config">dnp</field>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">RCT-0C</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="RCT-0C"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>024f2cc4-3ad0-4278-8341-299b4fa619a1</tstamps>
+    </comp>
+    <comp ref="J13">
+      <value>Testpoint</value>
+      <footprint>3devo_footprints:TestPoint_TE_RCT-0C_0805</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Config">dnp</field>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">RCT-0C</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="RCT-0C"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>5d23e792-7381-418d-90b6-c755e2a4a38a</tstamps>
+    </comp>
+    <comp ref="J14">
+      <value>Testpoint</value>
+      <footprint>3devo_footprints:TestPoint_TE_RCT-0C_0805</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Config">dnp</field>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">RCT-0C</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="RCT-0C"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>06579003-377f-424a-be8c-0e1f4ffe5e36</tstamps>
+    </comp>
+    <comp ref="J15">
+      <value>Testpoint</value>
+      <footprint>3devo_footprints:TestPoint_TE_RCT-0C_0805</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Config">dnp</field>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">RCT-0C</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="RCT-0C"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>9ab1fd28-6e26-4634-82f6-e99e894f5955</tstamps>
+    </comp>
+    <comp ref="J16">
+      <value>Testpoint</value>
+      <footprint>3devo_footprints:TestPoint_TE_RCT-0C_0805</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Config">dnp</field>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">RCT-0C</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="RCT-0C"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>fc6397e7-6325-4270-bd07-cec63fa93ad8</tstamps>
+    </comp>
+    <comp ref="J17">
+      <value>Testpoint</value>
+      <footprint>3devo_footprints:TestPoint_TE_RCT-0C_0805</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Config">dnp</field>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">RCT-0C</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="RCT-0C"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>7f740a6a-f5d5-4a64-aa68-eebfb873226a</tstamps>
+    </comp>
+    <comp ref="J18">
+      <value>Testpoint</value>
+      <footprint>TestPoint:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <fields>
+        <field name="Config">dnp</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>f5085b08-6395-4d00-8eed-d553c452378a</tstamps>
+    </comp>
+    <comp ref="J19">
+      <value>Testpoint</value>
+      <footprint>TestPoint:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <fields>
+        <field name="Config">dnp</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>1d86d05d-fd71-4d24-b41b-485fda61de47</tstamps>
+    </comp>
+    <comp ref="J20">
+      <value>Testpoint</value>
+      <footprint>TestPoint:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <fields>
+        <field name="Config">dnp</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>7e866c0b-6014-420a-8437-aac47ef0e456</tstamps>
+    </comp>
+    <comp ref="J21">
+      <value>Testpoint</value>
+      <footprint>TestPoint:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <fields>
+        <field name="Config">dnp</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>5b5a5d4f-b30c-46a0-b257-1557c813f47f</tstamps>
+    </comp>
+    <comp ref="J22">
+      <value>Testpoint</value>
+      <footprint>TestPoint:TestPoint_Keystone_5000-5004_Miniature</footprint>
+      <fields>
+        <field name="Config">dnp</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>0c3b5062-f81c-4ea7-ba74-3d82eed7afb2</tstamps>
+    </comp>
+    <comp ref="J23">
+      <value>Testpoint</value>
+      <footprint>3devo_footprints:TestPoint_TE_RCT-0C_0805</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Config">dnp</field>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">RCT-0C</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="RCT-0C"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>e2d4cbd0-5413-450b-83b1-1311764ef852</tstamps>
+    </comp>
+    <comp ref="J24">
+      <value>Testpoint</value>
+      <footprint>3devo_footprints:TestPoint_TE_RCT-0C_0805</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Config">dnp</field>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">RCT-0C</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="RCT-0C"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>94f11bd9-1c50-4a72-8507-21412e47f619</tstamps>
+    </comp>
+    <comp ref="J26">
+      <value>Testpoint</value>
+      <footprint>3devo_footprints:TestPoint_TE_RCT-0C_0805</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Config">dnp</field>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">RCT-0C</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="RCT-0C"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>2b562cac-3277-4da3-a68b-8dab73495b92</tstamps>
+    </comp>
+    <comp ref="J27">
+      <value>Testpoint</value>
+      <footprint>3devo_footprints:TestPoint_TE_RCT-0C_0805</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Config">dnp</field>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">RCT-0C</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="RCT-0C"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>831fb4da-43c9-4e02-b4b1-e0c04377b5f4</tstamps>
+    </comp>
+    <comp ref="J28">
+      <value>Testpoint</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>27595539-68aa-44eb-9d87-4fab59bba7d4</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>2k2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">CRGH0603F2K2</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="CRGH0603F2K2"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>064df87c-7dfc-4372-8859-b2017ff28ec9</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>2k2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">CRGH0603F2K2</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="CRGH0603F2K2"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>3194fa2c-0e72-4fab-ac2a-555963a666fc</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>2k2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">CRGH0603F2K2</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="CRGH0603F2K2"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>ace0b84f-480e-4ed4-a4a6-981412c31571</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>2ac0be5a-f56e-41a6-9997-6a964175030e</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>24fc3a51-47cc-46d3-b0b8-c8e93c7559e4</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Rohm</field>
+        <field name="Partnumber">ESR03EZPF1001</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Rohm"/>
+      <property name="Partnumber" value="ESR03EZPF1001"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>594221ea-f490-4f16-b059-b52594498d98</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Rohm</field>
+        <field name="Partnumber">ESR03EZPF1001</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Rohm"/>
+      <property name="Partnumber" value="ESR03EZPF1001"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>8e2bb2e1-f66a-4d9c-9bfb-95fa9c8bd421</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>DRV8308</value>
+      <footprint>Package_DFN_QFN:Texas_S-PVQFN-N40_EP3.52x2.62mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/drv8308.pdf</datasheet>
+      <fields>
+        <field name="Config">+SR</field>
+        <field name="Manufacturer">TI</field>
+        <field name="Partnumber">DRV8308RHAT</field>
+      </fields>
+      <libsource lib="Driver_Motor" part="DRV8308" description="Brushless DC motor controller, closed loop, hall sensor inputs, current limiting, SPI interface"/>
+      <property name="Manufacturer" value="TI"/>
+      <property name="Partnumber" value="DRV8308RHAT"/>
+      <property name="Config" value="+SR"/>
+      <property name="Sheetname" value="Driver"/>
+      <property name="Sheetfile" value="Driver.kicad_sch"/>
+      <sheetpath names="/Driver/" tstamps="/3880cd62-2323-4911-a7f9-6a1f5f304524/"/>
+      <tstamps>c19191b5-96d1-45ab-be21-40d3d71d6838</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>0R030</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CRA2512-FZ-R030ELF</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CRA2512-FZ-R030ELF"/>
+      <property name="Sheetname" value="Mosfets"/>
+      <property name="Sheetfile" value="Mosfets.kicad_sch"/>
+      <sheetpath names="/Mosfets/" tstamps="/dafb9ede-bbc7-4f4f-8b1b-ecb9aab2c0ed/"/>
+      <tstamps>f42cc6d9-2f87-4fcb-b5a3-61091104df1c</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>CSD88537ND</value>
+      <footprint>Package_SO:SO-8_3.9x4.9mm_P1.27mm</footprint>
+      <fields>
+        <field name="Manufacturer">TI</field>
+        <field name="Partnumber">CSD88537ND</field>
+      </fields>
+      <libsource lib="Device" part="Q_Dual_NMOS_S1G1S2G2D2D2D1D1" description="Dual NMOS transistor, 8 pin package"/>
+      <property name="Manufacturer" value="TI"/>
+      <property name="Partnumber" value="CSD88537ND"/>
+      <property name="Sheetname" value="Mosfets"/>
+      <property name="Sheetfile" value="Mosfets.kicad_sch"/>
+      <sheetpath names="/Mosfets/" tstamps="/dafb9ede-bbc7-4f4f-8b1b-ecb9aab2c0ed/"/>
+      <tstamps>39c4962c-0ec1-41f8-8d2a-16b919ffd8c5 096750bb-cac4-4ef7-b56d-229e666e49e6</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>CSD88537ND</value>
+      <footprint>Package_SO:SO-8_3.9x4.9mm_P1.27mm</footprint>
+      <fields>
+        <field name="Manufacturer">TI</field>
+        <field name="Partnumber">CSD88537ND</field>
+      </fields>
+      <libsource lib="Device" part="Q_Dual_NMOS_S1G1S2G2D2D2D1D1" description="Dual NMOS transistor, 8 pin package"/>
+      <property name="Manufacturer" value="TI"/>
+      <property name="Partnumber" value="CSD88537ND"/>
+      <property name="Sheetname" value="Mosfets"/>
+      <property name="Sheetfile" value="Mosfets.kicad_sch"/>
+      <sheetpath names="/Mosfets/" tstamps="/dafb9ede-bbc7-4f4f-8b1b-ecb9aab2c0ed/"/>
+      <tstamps>f2b123b2-f392-4f68-a6fd-a53f1b10e767 04f098e6-68dc-4e64-b08a-02596fe30e5b</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>CSD88537ND</value>
+      <footprint>Package_SO:SO-8_3.9x4.9mm_P1.27mm</footprint>
+      <fields>
+        <field name="Manufacturer">TI</field>
+        <field name="Partnumber">CSD88537ND</field>
+      </fields>
+      <libsource lib="Device" part="Q_Dual_NMOS_S1G1S2G2D2D2D1D1" description="Dual NMOS transistor, 8 pin package"/>
+      <property name="Manufacturer" value="TI"/>
+      <property name="Partnumber" value="CSD88537ND"/>
+      <property name="Sheetname" value="Mosfets"/>
+      <property name="Sheetfile" value="Mosfets.kicad_sch"/>
+      <sheetpath names="/Mosfets/" tstamps="/dafb9ede-bbc7-4f4f-8b1b-ecb9aab2c0ed/"/>
+      <tstamps>5107abc9-22c6-4df2-bb07-245d82e48b00 04e34059-fe05-45fd-a578-e2f4142d9779</tstamps>
+    </comp>
+    <comp ref="FD1">
+      <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_1mm_Mask2mm</footprint>
+      <fields>
+        <field name="Config">dnp</field>
+      </fields>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Miscellaneous"/>
+      <property name="Sheetfile" value="Misc.kicad_sch"/>
+      <sheetpath names="/Miscellaneous/" tstamps="/2041fcf2-c50d-41bb-ae4f-534d4d3cec35/"/>
+      <tstamps>3cc1b8be-5f51-42ed-a844-4ea0c20797dc</tstamps>
+    </comp>
+    <comp ref="FD2">
+      <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_1mm_Mask2mm</footprint>
+      <fields>
+        <field name="Config">dnp</field>
+      </fields>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Miscellaneous"/>
+      <property name="Sheetfile" value="Misc.kicad_sch"/>
+      <sheetpath names="/Miscellaneous/" tstamps="/2041fcf2-c50d-41bb-ae4f-534d4d3cec35/"/>
+      <tstamps>51c8d081-b379-41e4-94aa-4d792c6f81b9</tstamps>
+    </comp>
+    <comp ref="FD3">
+      <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_1mm_Mask2mm</footprint>
+      <fields>
+        <field name="Config">dnp</field>
+      </fields>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Miscellaneous"/>
+      <property name="Sheetfile" value="Misc.kicad_sch"/>
+      <sheetpath names="/Miscellaneous/" tstamps="/2041fcf2-c50d-41bb-ae4f-534d4d3cec35/"/>
+      <tstamps>a80ce3a3-bb04-414a-b9d9-f74f7f35ec6e</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>Mountinghole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad</footprint>
+      <fields>
+        <field name="Config">dnp</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Miscellaneous"/>
+      <property name="Sheetfile" value="Misc.kicad_sch"/>
+      <sheetpath names="/Miscellaneous/" tstamps="/2041fcf2-c50d-41bb-ae4f-534d4d3cec35/"/>
+      <tstamps>215c491f-3665-462e-b5d0-78f7426239ac</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>Mountinghole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad</footprint>
+      <fields>
+        <field name="Config">dnp</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Miscellaneous"/>
+      <property name="Sheetfile" value="Misc.kicad_sch"/>
+      <sheetpath names="/Miscellaneous/" tstamps="/2041fcf2-c50d-41bb-ae4f-534d4d3cec35/"/>
+      <tstamps>104cc82d-b412-44f5-a629-56ed6abf1103</tstamps>
+    </comp>
+    <comp ref="H3">
+      <value>Mountinghole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad</footprint>
+      <fields>
+        <field name="Config">dnp</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Miscellaneous"/>
+      <property name="Sheetfile" value="Misc.kicad_sch"/>
+      <sheetpath names="/Miscellaneous/" tstamps="/2041fcf2-c50d-41bb-ae4f-534d4d3cec35/"/>
+      <tstamps>83f8b749-16fc-4dd1-b6e2-dad2001aedb5</tstamps>
+    </comp>
+    <comp ref="H4">
+      <value>Mountinghole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad</footprint>
+      <fields>
+        <field name="Config">dnp</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Miscellaneous"/>
+      <property name="Sheetfile" value="Misc.kicad_sch"/>
+      <sheetpath names="/Miscellaneous/" tstamps="/2041fcf2-c50d-41bb-ae4f-534d4d3cec35/"/>
+      <tstamps>32d04084-4e19-4fb2-ae67-f32656cc61a8</tstamps>
+    </comp>
+    <comp ref="X1">
+      <value>3devo logo</value>
+      <footprint>3devo_footprints:logo_3devo_23mm</footprint>
+      <fields>
+        <field name="Config">dnp</field>
+      </fields>
+      <libsource lib="Graphic" part="Logo_Open_Hardware_Small" description="Open Hardware logo, small"/>
+      <property name="Config" value="dnp"/>
+      <property name="Sheetname" value="Miscellaneous"/>
+      <property name="Sheetfile" value="Misc.kicad_sch"/>
+      <sheetpath names="/Miscellaneous/" tstamps="/2041fcf2-c50d-41bb-ae4f-534d4d3cec35/"/>
+      <tstamps>4d30a73b-81ca-4121-b074-58087c1be639</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Murata</field>
+        <field name="Partnumber">GCM188L81H104KA57D</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Partnumber" value="GCM188L81H104KA57D"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>7cb3956c-8077-4937-b684-87581d363b8b</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Murata</field>
+        <field name="Partnumber">GCM188L81H104KA57D</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Partnumber" value="GCM188L81H104KA57D"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>62770fa6-f949-4845-b8d1-d79cbc02ffe7</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Murata</field>
+        <field name="Partnumber">GCM188L81H104KA57D</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Partnumber" value="GCM188L81H104KA57D"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>8adf9821-96e6-4bb8-8211-c23709e5a45c</tstamps>
+    </comp>
+    <comp ref="C18">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Murata</field>
+        <field name="Partnumber">GCM188L81H104KA57D</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Partnumber" value="GCM188L81H104KA57D"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>f45664d5-9d61-4d12-b36b-fe4ba40c3274</tstamps>
+    </comp>
+    <comp ref="C19">
+      <value>1uF 16V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Kemet</field>
+        <field name="Partnumber">C0603C105K4RACAUTO</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Kemet"/>
+      <property name="Partnumber" value="C0603C105K4RACAUTO"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>e407e2a9-831d-4caf-811a-5b41463f740a</tstamps>
+    </comp>
+    <comp ref="C20">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Murata</field>
+        <field name="Partnumber">GCM188L81H104KA57D</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Partnumber" value="GCM188L81H104KA57D"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>c5ce787a-5514-4a3a-a157-ac1436478d3d</tstamps>
+    </comp>
+    <comp ref="C21">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Murata</field>
+        <field name="Partnumber">GCM188L81H104KA57D</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Partnumber" value="GCM188L81H104KA57D"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>68370621-94dd-4289-b368-d10a008d76c9</tstamps>
+    </comp>
+    <comp ref="C22">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Murata</field>
+        <field name="Partnumber">GCM188L81H104KA57D</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Partnumber" value="GCM188L81H104KA57D"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>5211af9c-cff6-447c-95a3-0076c2c25a91</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Pinheader 02x06 shrouded</value>
+      <footprint>Connector_IDC:IDC-Header_2x06_P2.54mm_Vertical</footprint>
+      <datasheet>http://www.farnell.com/datasheets/1648843.pdf?_ga=2.140115507.1253506730.1569844243-1385557990.1461597160</datasheet>
+      <fields>
+        <field name="Function">MCU I/O</field>
+        <field name="Manufacturer">Amphenol</field>
+        <field name="Partnumber">T821112A1S100CEU</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_02x06_Odd_Even" description="Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Manufacturer" value="Amphenol"/>
+      <property name="Function" value="MCU I/O"/>
+      <property name="Partnumber" value="T821112A1S100CEU"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>e05d5216-7b11-47fc-b83c-81f42d71c84e</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Testpoint</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>c42ea107-1c70-4c02-b72d-5d09545e9247</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>Testpoint</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>ae0db286-ab82-4677-9b72-33973fe72d66</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>f5c0ad0d-1d86-4d6d-9de8-ae38b69ef35b</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>abeae00c-410c-4c64-80e2-50b30f360f63</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>b01edfae-0cb3-45be-b53f-2b794046b0c6</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>2k2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">CRGH0603F2K2</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="CRGH0603F2K2"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>0422c285-07a6-4fdc-87bf-bb2a749cacd5</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>770cc643-f25d-49b6-9feb-8edcfff5fa39</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>2a8baf80-a20c-4011-954c-5aa688d6b414</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>fa278db0-e966-4f06-85d6-1783c29603c0</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>70f98fdb-adc9-4e50-b3fd-cccbd906ed4f</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>f4f17bc5-86a4-47a7-b260-ac85e9a790cd</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>2b887f39-0d48-4e5a-9d16-304120185d82</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>504d6a09-dd9b-4b67-b972-d5cecbc52a2f</tstamps>
+    </comp>
+    <comp ref="R22">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>bc2d6486-77b1-428a-ab85-e4b331f3de20</tstamps>
+    </comp>
+    <comp ref="R23">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>44610678-2c02-4103-bdac-fe5bb4887d0d</tstamps>
+    </comp>
+    <comp ref="R26">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>dcdfea9c-8f83-480a-b779-86f4eb176f4f</tstamps>
+    </comp>
+    <comp ref="R27">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>030f459b-d049-43ef-9c2c-4ab85f8f4aee</tstamps>
+    </comp>
+    <comp ref="R28">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>ccd58a34-79fe-4ae8-819a-f1405b96ca6a</tstamps>
+    </comp>
+    <comp ref="R29">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>2a8d0631-d795-4bea-abcc-b7ecb25e6a1d</tstamps>
+    </comp>
+    <comp ref="R30">
+      <value>2k2</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">TE</field>
+        <field name="Partnumber">CRGH0603F2K2</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="TE"/>
+      <property name="Partnumber" value="CRGH0603F2K2"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>4711d210-f744-4b9e-80d8-ed8800bc2f5a</tstamps>
+    </comp>
+    <comp ref="R31">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Partnumber">CR0603-FX-1002GLF</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Partnumber" value="CR0603-FX-1002GLF"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>10e4aa63-cde6-446b-9682-c88b5a4e9f80</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>MAX14851</value>
+      <footprint>Package_SO:QSOP-16_3.9x4.9mm_P0.635mm</footprint>
+      <datasheet>https://datasheets.maximintegrated.com/en/ds/MAX14851.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Maxim</field>
+        <field name="Partnumber">MAX14851AEE+</field>
+      </fields>
+      <libsource lib="3devo_symbols" part="MAX14851" description=""/>
+      <property name="Manufacturer" value="Maxim"/>
+      <property name="Partnumber" value="MAX14851AEE+"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>25ad0fea-4ef2-46ca-ba63-eeb37aa06905</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>MAX14851</value>
+      <footprint>Package_SO:QSOP-16_3.9x4.9mm_P0.635mm</footprint>
+      <datasheet>https://datasheets.maximintegrated.com/en/ds/MAX14851.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Maxim</field>
+        <field name="Partnumber">MAX14851AEE+</field>
+      </fields>
+      <libsource lib="3devo_symbols" part="MAX14851" description=""/>
+      <property name="Manufacturer" value="Maxim"/>
+      <property name="Partnumber" value="MAX14851AEE+"/>
+      <property name="Sheetname" value="Inputs"/>
+      <property name="Sheetfile" value="Inputs.kicad_sch"/>
+      <sheetpath names="/Inputs/" tstamps="/eae36b4b-237b-41e5-b603-25216a1d474f/"/>
+      <tstamps>158bf779-e056-4ee9-9f29-b15a44aae33e</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>1uF 35V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Samsung</field>
+        <field name="Partnumber">CL21B105KBFNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="Partnumber" value="CL21B105KBFNNNE"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="Power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/abc1e50f-7ed6-49d7-895b-3556759e8bb1/"/>
+      <tstamps>18d9310c-0ac1-4253-ab8f-514e4ebc2bfa</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>22uF 35V</value>
+      <footprint>Capacitor_SMD:CP_Elec_5x5.8</footprint>
+      <fields>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="Partnumber">EEE-FK1V220R</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized_Small" description="Polarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Panasonic"/>
+      <property name="Partnumber" value="EEE-FK1V220R"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="Power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/abc1e50f-7ed6-49d7-895b-3556759e8bb1/"/>
+      <tstamps>d9708361-b738-4bd1-9841-d53997afb27e</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>220uF 35V</value>
+      <footprint>Capacitor_SMD:CP_Elec_10x10</footprint>
+      <datasheet>https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Electronic%20Components/S_Series,Type_V_Rev2018.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="Partnumber">EEE-1HA221P</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized_Small" description="Polarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Panasonic"/>
+      <property name="Partnumber" value="EEE-1HA221P"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="Power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/abc1e50f-7ed6-49d7-895b-3556759e8bb1/"/>
+      <tstamps>001bcb60-e305-4f72-9eef-2f5c5db46d33</tstamps>
+    </comp>
+    <comp ref="C17">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Murata</field>
+        <field name="Partnumber">GCM188L81H104KA57D</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Partnumber" value="GCM188L81H104KA57D"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="Power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/abc1e50f-7ed6-49d7-895b-3556759e8bb1/"/>
+      <tstamps>c550da61-bef9-4f46-96b8-a9d14c4ea1a8</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>Green</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>http://www.kingbrightusa.com/images/catalog/SPEC/APT2012SGC.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Kingston</field>
+        <field name="Partnumber">APT2012SGC</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <property name="Manufacturer" value="Kingston"/>
+      <property name="Partnumber" value="APT2012SGC"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="Power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/abc1e50f-7ed6-49d7-895b-3556759e8bb1/"/>
+      <tstamps>0ac99978-2042-4643-b118-ac93872f2866</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>Green</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>http://www.kingbrightusa.com/images/catalog/SPEC/APT2012SGC.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Kingston</field>
+        <field name="Partnumber">APT2012SGC</field>
+      </fields>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <property name="Manufacturer" value="Kingston"/>
+      <property name="Partnumber" value="APT2012SGC"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="Power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/abc1e50f-7ed6-49d7-895b-3556759e8bb1/"/>
+      <tstamps>f94433ff-b1a0-4411-a002-25faee0dbae7</tstamps>
+    </comp>
+    <comp ref="D6">
+      <value>1.5SMC33CA-E3/57T</value>
+      <footprint>Diode_SMD:D_SMC</footprint>
+      <datasheet>http://www.vishay.com/docs/88303/15smc.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Vishay</field>
+        <field name="Partnumber">1.5SMC33CA-E3/57T</field>
+      </fields>
+      <libsource lib="Device" part="D_Small" description="Diode, small symbol"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="Partnumber" value="1.5SMC33CA-E3/57T"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="Power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/abc1e50f-7ed6-49d7-895b-3556759e8bb1/"/>
+      <tstamps>5b939e14-863c-44f0-87ec-da343a269881</tstamps>
+    </comp>
+    <comp ref="J25">
+      <value>Molex MegaFit 01x02</value>
+      <footprint>Connector_Molex:Molex_Mega-Fit_76825-0002_2x01_P5.70mm_Horizontal</footprint>
+      <datasheet>https://www.molex.com/pdm_docs/sd/768250002_sd.pdf</datasheet>
+      <fields>
+        <field name="Function">Power input</field>
+        <field name="Manufacturer">Molex</field>
+        <field name="Partnumber">076825-0002</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Manufacturer" value="Molex"/>
+      <property name="Partnumber" value="076825-0002"/>
+      <property name="Function" value="Power input"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="Power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/abc1e50f-7ed6-49d7-895b-3556759e8bb1/"/>
+      <tstamps>f423a4e2-6397-4d8c-b7de-9f473f0bcf58</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Rohm</field>
+        <field name="Partnumber">ESR03EZPF1001</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Rohm"/>
+      <property name="Partnumber" value="ESR03EZPF1001"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="Power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/abc1e50f-7ed6-49d7-895b-3556759e8bb1/"/>
+      <tstamps>0aadc6a8-cc0e-40ae-b2f7-c4a80cfe1593</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>4k7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Stackpole</field>
+        <field name="Partnumber">RMCF0603FT4K70</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Manufacturer" value="Stackpole"/>
+      <property name="Partnumber" value="RMCF0603FT4K70"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="Power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/abc1e50f-7ed6-49d7-895b-3556759e8bb1/"/>
+      <tstamps>c64ece99-7c8f-4d87-873c-22f08cdc05de</tstamps>
+    </comp>
+    <comp ref="U7">
+      <value>LM2931-5.0_SO8</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>http://www.farnell.com/datasheets/1726420.pdf?_ga=2.163897593.794900339.1553156297-1346749375.1549278371&amp;_gac=1.195807640.1551887436.EAIaIQobChMI_vagme_t4AIVhOd3Ch24TAAnEAAYASAAEgKd6fD_BwE</datasheet>
+      <fields>
+        <field name="Manufacturer">On Semiconductor</field>
+        <field name="Partnumber">LM2931AD-5.0R2G</field>
+      </fields>
+      <libsource lib="Regulator_Linear" part="LM2931-5.0_SO8" description="Positive 100mA 30V Linear Regulator, Fixed Output 5V, SO-8"/>
+      <property name="Manufacturer" value="On Semiconductor"/>
+      <property name="Partnumber" value="LM2931AD-5.0R2G"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="Power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/abc1e50f-7ed6-49d7-895b-3556759e8bb1/"/>
+      <tstamps>89d12cd1-8158-451c-8cf4-3fdac0f15eed</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="3devo_symbols" part="MAX14851">
+      <docs>https://datasheets.maximintegrated.com/en/ds/MAX14851.pdf</docs>
+      <fields>
+        <field name="Reference">U?</field>
+        <field name="Value">MAX14851</field>
+        <field name="Footprint">Package_SO:QSOP-16_3.9x4.9mm_P0.635mm</field>
+        <field name="Datasheet">https://datasheets.maximintegrated.com/en/ds/MAX14851.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCCA" type="power_in"/>
+        <pin num="2" name="INA1" type="input"/>
+        <pin num="3" name="INA2" type="input"/>
+        <pin num="4" name="OUTA1" type="output"/>
+        <pin num="5" name="OUTA2" type="output"/>
+        <pin num="6" name="I/OA1" type="bidirectional"/>
+        <pin num="7" name="I/OA2" type="bidirectional"/>
+        <pin num="8" name="GNDA" type="power_in"/>
+        <pin num="9" name="GNDB" type="power_in"/>
+        <pin num="10" name="I/OB2" type="bidirectional"/>
+        <pin num="11" name="I/OB1" type="bidirectional"/>
+        <pin num="12" name="INB2" type="bidirectional"/>
+        <pin num="13" name="INB1" type="bidirectional"/>
+        <pin num="14" name="OUTB2" type="bidirectional"/>
+        <pin num="15" name="OUTB1" type="bidirectional"/>
+        <pin num="16" name="VCCB" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x01">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x05">
+      <description>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x05</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x08">
+      <description>Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x08</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x06_Odd_Even">
+      <description>Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x06_Odd_Even</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized_Small">
+      <description>Polarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Small">
+      <description>Diode, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_Small">
+      <description>Light emitting diode, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_Dual_NMOS_S1G1S2G2D2D2D1D1">
+      <description>Dual NMOS transistor, 8 pin package</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SO*</fp>
+        <fp>SOIC*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_Dual_NMOS_S1G1S2G2D2D2D1D1</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="S" type="passive"/>
+        <pin num="4" name="G" type="input"/>
+        <pin num="5" name="D" type="passive"/>
+        <pin num="6" name="D" type="passive"/>
+        <pin num="7" name="D" type="passive"/>
+        <pin num="8" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Driver_Motor" part="DRV8308">
+      <description>Brushless DC motor controller, closed loop, hall sensor inputs, current limiting, SPI interface</description>
+      <docs>http://www.ti.com/lit/ds/symlink/drv8308.pdf</docs>
+      <footprints>
+        <fp>Texas*S*PVQFN*N40*3.52x2.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DRV8308</field>
+        <field name="Footprint">Package_DFN_QFN:Texas_S-PVQFN-N40_EP3.52x2.62mm</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/drv8308.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="UHP" type="input"/>
+        <pin num="2" name="UHN" type="input"/>
+        <pin num="3" name="VHP" type="input"/>
+        <pin num="4" name="VHN" type="input"/>
+        <pin num="5" name="WHP" type="input"/>
+        <pin num="6" name="WHN" type="input"/>
+        <pin num="7" name="VSW" type="power_out"/>
+        <pin num="8" name="FGFB" type="output"/>
+        <pin num="9" name="FGINN_TACH" type="input"/>
+        <pin num="10" name="FGINP" type="bidirectional"/>
+        <pin num="11" name="SCLK" type="input"/>
+        <pin num="12" name="SCS" type="input"/>
+        <pin num="13" name="SMODE" type="input"/>
+        <pin num="14" name="SDATAI" type="input"/>
+        <pin num="15" name="SDATAO" type="output"/>
+        <pin num="16" name="FGOUT" type="output"/>
+        <pin num="17" name="~{FAULTn}" type="output"/>
+        <pin num="18" name="~{LOCKn}" type="output"/>
+        <pin num="19" name="CLKIN" type="input"/>
+        <pin num="20" name="BRAKE" type="input"/>
+        <pin num="21" name="DIR" type="input"/>
+        <pin num="22" name="ENABLE" type="input"/>
+        <pin num="23" name="RESET" type="input"/>
+        <pin num="24" name="VREG" type="power_out"/>
+        <pin num="25" name="VINT" type="passive"/>
+        <pin num="26" name="GND" type="power_in"/>
+        <pin num="27" name="VM" type="power_in"/>
+        <pin num="28" name="VCP" type="passive"/>
+        <pin num="29" name="CP2" type="passive"/>
+        <pin num="30" name="CP1" type="passive"/>
+        <pin num="31" name="ISEN" type="input"/>
+        <pin num="32" name="UHSG" type="output"/>
+        <pin num="33" name="U" type="input"/>
+        <pin num="34" name="ULSG" type="output"/>
+        <pin num="35" name="VHSG" type="output"/>
+        <pin num="36" name="V" type="input"/>
+        <pin num="37" name="VLSG" type="output"/>
+        <pin num="38" name="WHSG" type="output"/>
+        <pin num="39" name="W" type="input"/>
+        <pin num="40" name="WLSG" type="output"/>
+        <pin num="41" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Graphic" part="Logo_Open_Hardware_Small">
+      <description>Open Hardware logo, small</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">#LOGO</field>
+        <field name="Value">Logo_Open_Hardware_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
+    <libpart lib="Mechanical" part="Fiducial">
+      <description>Fiducial Marker</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Fiducial*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FID</field>
+        <field name="Value">Fiducial</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="LM2931-5.0_SO8">
+      <description>Positive 100mA 30V Linear Regulator, Fixed Output 5V, SO-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm2931-n.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2931-5.0_SO8</field>
+        <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lm2931-n.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="power_out"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="GND" type="passive"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="NC" type="no_connect"/>
+        <pin num="6" name="GND" type="passive"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="IN" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="3devo_symbols">
+      <uri>/workspaces/index/pnp/pcb/mobo/../kicad_libraries/symbols/symbols.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/symbols//Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Driver_Motor">
+      <uri>/usr/share/kicad/symbols//Driver_Motor.kicad_sym</uri>
+    </library>
+    <library logical="Graphic">
+      <uri>/usr/share/kicad/symbols//Graphic.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/usr/share/kicad/symbols//Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>/usr/share/kicad/symbols//Regulator_Linear.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="R26" pin="2" pintype="passive"/>
+      <node ref="R27" pin="1" pintype="passive"/>
+      <node ref="R28" pin="1" pintype="passive"/>
+      <node ref="R29" pin="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R30" pin="2" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="VCCB" pintype="power_in"/>
+      <node ref="U2" pin="16" pinfunction="VCCB" pintype="power_in"/>
+      <node ref="U7" pin="1" pinfunction="OUT" pintype="power_out"/>
+    </net>
+    <net code="2" name="+5VP">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="J14" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J5" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="J6" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U3" pin="24" pinfunction="VREG" pintype="power_out"/>
+    </net>
+    <net code="3" name="+24V">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J25" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U3" pin="27" pinfunction="VM" pintype="power_in"/>
+      <node ref="U4" pin="7" pinfunction="D" pintype="passive"/>
+      <node ref="U4" pin="8" pinfunction="D" pintype="passive"/>
+      <node ref="U5" pin="7" pinfunction="D" pintype="passive"/>
+      <node ref="U5" pin="8" pinfunction="D" pintype="passive"/>
+      <node ref="U6" pin="7" pinfunction="D" pintype="passive"/>
+      <node ref="U6" pin="8" pinfunction="D" pintype="passive"/>
+      <node ref="U7" pin="8" pinfunction="IN" pintype="power_in"/>
+    </net>
+    <net code="4" name="/Driver/BRAKE">
+      <node ref="J28" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U3" pin="20" pinfunction="BRAKE" pintype="input"/>
+    </net>
+    <net code="5" name="/Driver/CLKIN">
+      <node ref="J22" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="15" pinfunction="OUTB1" pintype="bidirectional"/>
+      <node ref="U3" pin="19" pinfunction="CLKIN" pintype="input"/>
+    </net>
+    <net code="6" name="/Driver/DIR">
+      <node ref="U2" pin="14" pinfunction="OUTB2" pintype="bidirectional"/>
+      <node ref="U3" pin="21" pinfunction="DIR" pintype="input"/>
+    </net>
+    <net code="7" name="/Driver/ENABLE">
+      <node ref="J21" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="I/OB2" pintype="bidirectional"/>
+      <node ref="U3" pin="22" pinfunction="ENABLE" pintype="input"/>
+    </net>
+    <net code="8" name="/Driver/FGOUT">
+      <node ref="J18" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R27" pin="2" pintype="passive"/>
+      <node ref="U2" pin="13" pinfunction="INB1" pintype="bidirectional"/>
+      <node ref="U3" pin="16" pinfunction="FGOUT" pintype="output"/>
+    </net>
+    <net code="9" name="/Driver/HU">
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="J11" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J5" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="UHP" pintype="input"/>
+    </net>
+    <net code="10" name="/Driver/HV">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="J12" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J5" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="J6" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="VHP" pintype="input"/>
+    </net>
+    <net code="11" name="/Driver/HW">
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="J13" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J5" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="J6" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="WHP" pintype="input"/>
+    </net>
+    <net code="12" name="/Driver/ISENSE">
+      <node ref="J4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="U3" pin="31" pinfunction="ISEN" pintype="input"/>
+      <node ref="U4" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="U5" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="U6" pin="3" pinfunction="S" pintype="passive"/>
+    </net>
+    <net code="13" name="/Driver/MISO">
+      <node ref="R30" pin="1" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="I/OB2" pintype="bidirectional"/>
+      <node ref="U3" pin="15" pinfunction="SDATAO" pintype="output"/>
+    </net>
+    <net code="14" name="/Driver/MOSI">
+      <node ref="U1" pin="14" pinfunction="OUTB2" pintype="bidirectional"/>
+      <node ref="U3" pin="14" pinfunction="SDATAI" pintype="input"/>
+    </net>
+    <net code="15" name="/Driver/RESET">
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="U2" pin="11" pinfunction="I/OB1" pintype="bidirectional"/>
+      <node ref="U3" pin="23" pinfunction="RESET" pintype="input"/>
+    </net>
+    <net code="16" name="/Driver/SCLK">
+      <node ref="U1" pin="15" pinfunction="OUTB1" pintype="bidirectional"/>
+      <node ref="U3" pin="11" pinfunction="SCLK" pintype="input"/>
+    </net>
+    <net code="17" name="/Driver/SS">
+      <node ref="R26" pin="1" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="I/OB1" pintype="bidirectional"/>
+      <node ref="U3" pin="12" pinfunction="SCS" pintype="input"/>
+    </net>
+    <net code="18" name="/Driver/U">
+      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U3" pin="33" pinfunction="U" pintype="input"/>
+      <node ref="U4" pin="1" pinfunction="S" pintype="passive"/>
+      <node ref="U4" pin="5" pinfunction="D" pintype="passive"/>
+      <node ref="U4" pin="6" pinfunction="D" pintype="passive"/>
+    </net>
+    <net code="19" name="/Driver/UHS_GATE">
+      <node ref="J7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="32" pinfunction="UHSG" pintype="output"/>
+      <node ref="U4" pin="2" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="20" name="/Driver/ULS_GATE">
+      <node ref="J8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="34" pinfunction="ULSG" pintype="output"/>
+      <node ref="U4" pin="4" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="21" name="/Driver/V">
+      <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U3" pin="36" pinfunction="V" pintype="input"/>
+      <node ref="U5" pin="1" pinfunction="S" pintype="passive"/>
+      <node ref="U5" pin="5" pinfunction="D" pintype="passive"/>
+      <node ref="U5" pin="6" pinfunction="D" pintype="passive"/>
+    </net>
+    <net code="22" name="/Driver/VHS_GATE">
+      <node ref="J9" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="35" pinfunction="VHSG" pintype="output"/>
+      <node ref="U5" pin="2" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="23" name="/Driver/VLS_GATE">
+      <node ref="J10" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="37" pinfunction="VLSG" pintype="output"/>
+      <node ref="U5" pin="4" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="24" name="/Driver/W">
+      <node ref="J5" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U3" pin="39" pinfunction="W" pintype="input"/>
+      <node ref="U6" pin="1" pinfunction="S" pintype="passive"/>
+      <node ref="U6" pin="5" pinfunction="D" pintype="passive"/>
+      <node ref="U6" pin="6" pinfunction="D" pintype="passive"/>
+    </net>
+    <net code="25" name="/Driver/WHS_GATE">
+      <node ref="J15" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="38" pinfunction="WHSG" pintype="output"/>
+      <node ref="U6" pin="2" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="26" name="/Driver/WLS_GATE">
+      <node ref="J26" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="40" pinfunction="WLSG" pintype="output"/>
+      <node ref="U6" pin="4" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="27" name="/Driver/~{FAULTn}">
+      <node ref="J19" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="R29" pin="2" pintype="passive"/>
+      <node ref="U3" pin="17" pinfunction="~{FAULTn}" pintype="output"/>
+    </net>
+    <net code="28" name="/Driver/~{LOCKn}">
+      <node ref="J20" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R28" pin="2" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U3" pin="18" pinfunction="~{LOCKn}" pintype="output"/>
+    </net>
+    <net code="29" name="/Inputs/CLKIN_MCU">
+      <node ref="J1" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="INA1" pintype="input"/>
+    </net>
+    <net code="30" name="/Inputs/DIR_MCU">
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R31" pin="2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="INA2" pintype="input"/>
+    </net>
+    <net code="31" name="/Inputs/ENABLE_MCU">
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="I/OA2" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="/Inputs/FGOUT_MCU">
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="OUTA1" pintype="output"/>
+    </net>
+    <net code="33" name="/Inputs/MISO_MCU">
+      <node ref="J1" pin="9" pinfunction="Pin_9" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="I/OA2" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="/Inputs/MOSI_MCU">
+      <node ref="J1" pin="10" pinfunction="Pin_10" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="INA2" pintype="input"/>
+    </net>
+    <net code="35" name="/Inputs/RESET_MCU">
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="I/OA1" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="/Inputs/SCLK_MCU">
+      <node ref="J1" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="INA1" pintype="input"/>
+    </net>
+    <net code="37" name="/Inputs/SS_MCU">
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="I/OA1" pintype="bidirectional"/>
+    </net>
+    <net code="38" name="/Inputs/~{FAULTn_MCU}">
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="OUTA2" pintype="output"/>
+    </net>
+    <net code="39" name="/Inputs/~{LOCKn_MCU}">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="OUTA1" pintype="output"/>
+    </net>
+    <net code="40" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="C22" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="H1" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H2" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H3" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H4" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="J16" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J17" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J23" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J24" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J25" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J27" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J5" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="GNDB" pintype="power_in"/>
+      <node ref="U2" pin="9" pinfunction="GNDB" pintype="power_in"/>
+      <node ref="U3" pin="13" pinfunction="SMODE" pintype="input"/>
+      <node ref="U3" pin="26" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="41" pinfunction="GND" pintype="power_in"/>
+      <node ref="U7" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="U7" pin="3" pinfunction="GND" pintype="passive"/>
+      <node ref="U7" pin="6" pinfunction="GND" pintype="passive"/>
+      <node ref="U7" pin="7" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="41" name="GNDA">
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="J1" pin="12" pinfunction="Pin_12" pintype="passive"/>
+      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R31" pin="1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="GNDA" pintype="power_in"/>
+      <node ref="U2" pin="8" pinfunction="GNDA" pintype="power_in"/>
+    </net>
+    <net code="42" name="Net-(C7-Pad1)">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="U3" pin="30" pinfunction="CP1" pintype="passive"/>
+    </net>
+    <net code="43" name="Net-(C7-Pad2)">
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="U3" pin="29" pinfunction="CP2" pintype="passive"/>
+    </net>
+    <net code="44" name="Net-(C8-Pad2)">
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="U3" pin="25" pinfunction="VINT" pintype="passive"/>
+    </net>
+    <net code="45" name="Net-(C9-Pad1)">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="U3" pin="28" pinfunction="VCP" pintype="passive"/>
+    </net>
+    <net code="46" name="Net-(C12-Pad1)">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="UHN" pintype="input"/>
+      <node ref="U3" pin="4" pinfunction="VHN" pintype="input"/>
+      <node ref="U3" pin="6" pinfunction="WHN" pintype="input"/>
+    </net>
+    <net code="47" name="Net-(C21-Pad2)">
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="INB1" pintype="bidirectional"/>
+    </net>
+    <net code="48" name="Net-(C22-Pad2)">
+      <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="INB2" pintype="bidirectional"/>
+    </net>
+    <net code="49" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+    </net>
+    <net code="50" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+    </net>
+    <net code="51" name="Net-(D4-Pad1)">
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+    </net>
+    <net code="52" name="Net-(D5-Pad1)">
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+    </net>
+    <net code="53" name="VCC">
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="J1" pin="11" pinfunction="Pin_11" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="VCCA" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="VCCA" pintype="power_in"/>
+    </net>
+    <net code="54" name="unconnected-(U1-Pad5)">
+      <node ref="U1" pin="5" pinfunction="OUTA2" pintype="output+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U1-Pad12)">
+      <node ref="U1" pin="12" pinfunction="INB2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(U3-Pad7)">
+      <node ref="U3" pin="7" pinfunction="VSW" pintype="power_out+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(U3-Pad8)">
+      <node ref="U3" pin="8" pinfunction="FGFB" pintype="output+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(U3-Pad9)">
+      <node ref="U3" pin="9" pinfunction="FGINN_TACH" pintype="input+no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(U3-Pad10)">
+      <node ref="U3" pin="10" pinfunction="FGINP" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(U7-Pad4)">
+      <node ref="U7" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(U7-Pad5)">
+      <node ref="U7" pin="5" pinfunction="NC" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>
