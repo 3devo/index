@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     
 env:
- time_zone: Europe/Amsterdam
+  time_zone: Europe/Amsterdam
 
 jobs:
   generate-artifacts:
@@ -18,20 +18,18 @@ jobs:
       run: |
         apt update
         apt -y install git zip
-
     - name: Checkout Repository
-      uses: actions/checkout@v2     
+      uses: actions/checkout@v2
 
-    - name: Get current date
+    - name: Get current date and time
       id: date
-      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      run: echo "::set-output name=date::$(TZ='${{ env.time_zone }}' date +'%Y-%m-%d')"     
 
     - name: Run KiBot
       run: |
         cd pnp/pcb/mobo
         rm -rf export/
         kibot -c ../../../config-4layer.kibot.yaml -e mobo.kicad_sch -b mobo.kicad_pcb -d export
-
     # Splitting this out to ensure a failed kibot run will mark a check as failed.
     - name: Prepare gerber
       run: |
@@ -42,7 +40,6 @@ jobs:
       run: |
         cd pnp/pcb/mobo/export/
         zip -r -j ../pnp_mobo_files.zip *
-
     - name: Upload Artifacts to Workflow Run
       uses: actions/upload-artifact@v2
       with:
