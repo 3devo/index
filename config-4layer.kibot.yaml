@@ -3,33 +3,30 @@ kibot:
   version: 1
 
 global:
-  output: '%f_v%r_%i.%x' #projectname_version_outputtype_file_id.extension
+  output: '%f_v%r_%V_%i.%x' #projectname_version_outputtype_file_id.extension
 
 variants:
   - name: 'SR'
     comment: 'GP20 Shredder'
     type: kibom
-    file_id: '_SR'
     variant: SR
 
   - name: 'GR'
     comment: 'GP20 Granulator'
     type: kibom
-    file_id: '_GR'
     variant: GR
 
 preflight:
   set_text_variables:
-    - variable: 'version'
-      text: '1.2.4'
     - variable: 'date'
-      text: 'today'
-
+      command: 'git log -1 --format="%as" -- $KIBOT_SCH_NAME' #Last modification date of schematic file
+    - variable: 'version'
+      text: '1.2.4' 
   run_erc: false
-  update_xml: true
   run_drc: false
   check_zone_fills: true
   ignore_unconnected: false
+  update_xml: true
   
 
 outputs:
@@ -59,7 +56,8 @@ outputs:
         col_colors: false
         logo: false
         title: 'Bill of materials'
+        max_col_width: 999
       count_smd_tht: true
-      ref_seperator: ','
+      ref_separator: ','
 
       #dnf_filter: 'dnp'
