@@ -3,7 +3,7 @@ kibot:
   version: 1
 
 global:
-  output: '%f_%r_%i%g.%x' #projectname_version_outputtype_file_id.extension
+  output: '%f_v%r_%i.%x' #projectname_version_outputtype_file_id.extension
 
 variants:
   - name: 'SR'
@@ -19,17 +19,29 @@ variants:
     variant: GR
 
 preflight:
+  set_text_variables:
+    - variable: 'version'
+      text: '1.2.4'
+    - variable: 'date'
+      text: 'today'
+
   run_erc: false
   update_xml: true
   run_drc: false
   check_zone_fills: true
   ignore_unconnected: false
-  set_text_variables:
-    - name: 'version'
-      command: 'echo 1.2.3'
+  
 
 outputs:
-  
+  - name: 'ibom'
+    comment: 'Interactive Bill of Materials'
+    type: ibom
+    dir: Bill of materials
+    options:
+      dark_mode: true
+      extra_fields: 'Partnumber'
+
+
   - name: 'bom'
     comment: 'Bill of Materials'
     type: bom
@@ -46,31 +58,8 @@ outputs:
       xlsx:
         col_colors: false
         logo: false
-        generate_dnf: true
-        title: Bill of materials
+        title: 'Bill of materials'
       count_smd_tht: true
+      ref_seperator: ','
 
-  - name: 'position'
-    comment: "Pick and place file, XYRS style"
-    type: bom
-    options:
-      units: millimeters
-      group_fields: []
-      sort_style: ref
-      use_aux_axis_as_origin: true
-      ignore_dnf: false
-      footprint_populate_values: 'no,yes'
-      csv:
-        hide_pcb_info: true
-        hide_stats_info: true
-        hide_header: false
-      columns:
-        - field: References
-        - field: Value
-        - field: Footprint
-        - field: Footprint X
-        - field: Footprint Y
-        - field: Footprint Rot
-          name: Rotation 
-        - field: Footprint Populate
-          name: Populate
+      #dnf_filter: 'dnp'

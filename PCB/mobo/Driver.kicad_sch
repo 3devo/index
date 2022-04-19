@@ -6,8 +6,8 @@
 
   (title_block
     (title "GD BLDC blower driver")
-    (date "2019-03-11")
-    (rev "v1.1")
+    (date "${date}")
+    (rev "${version}")
     (company "3devo")
   )
 
@@ -2295,7 +2295,7 @@
     (property "Partnumber" "DRV8308RHAT" (id 7) (at 140.97 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Config" "+SR" (id 6) (at 156.21 128.27 0))
+    (property "Config" "+SR" (id 8) (at 156.21 128.27 0))
     (pin "1" (uuid 2f33ed1f-aac4-4cc6-84de-1d07e17c2059))
     (pin "10" (uuid 9036d051-f18e-49c0-a2b6-ecb5ee441955))
     (pin "11" (uuid 94ed0068-78fe-402f-961e-356451f76c01))

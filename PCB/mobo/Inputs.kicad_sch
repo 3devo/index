@@ -6,8 +6,8 @@
 
   (title_block
     (title "GD BLDC blower driver")
-    (date "2019-03-11")
-    (rev "v1.1")
+    (date "${date}")
+    (rev "${version}")
     (company "3devo")
   )
 

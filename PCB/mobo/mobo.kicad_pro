@@ -354,7 +354,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "GD-BLDC-driver.kicad_pro",
+    "filename": "mobo.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -457,7 +457,5 @@
       "Power"
     ]
   ],
-  "text_variables": {
-    "version": "1.2.3"
-  }
+  "text_variables": {}
 }

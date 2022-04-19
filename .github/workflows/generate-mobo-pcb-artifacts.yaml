@@ -28,9 +28,9 @@ jobs:
 
     - name: Run KiBot
       run: |
-        cd pnp/pcb/mobo
+        cd PCB/mobo
         rm -rf export/
-        kibot -c ../../../config-4layer.kibot.yaml -e mobo.kicad_sch -b mobo.kicad_pcb -d export
+        kibot -c ../../config-4layer.kibot.yaml -e mobo.kicad_sch -b mobo.kicad_pcb -d ../../export
 
     # Splitting this out to ensure a failed kibot run will mark a check as failed.
     - name: Prepare gerber

@@ -7,8 +7,8 @@
   (paper "A4")
   (title_block
     (title "GD motor driver test")
-    (date "2019-03-11")
-    (rev "1.2")
+    (date "${date}")
+    (rev "${version}")
     (company "3devo")
   )
 
@@ -87,8 +87,6 @@
       (outputdirectory "Gerbers2/")
     )
   )
-
-  (property "version" "1.2.3")
 
   (net 0 "")
   (net 1 "GND")
@@ -6309,6 +6307,9 @@
   )
   (gr_text "SS" (at 116.205 142.875) (layer "F.SilkS") (tstamp 934c5f28-c928-4621-8122-b999b3ed10dd)
     (effects (font (size 1 1) (thickness 0.25)))
+  )
+  (gr_text "${version}" (at 98.85 177) (layer "F.SilkS") (tstamp a21946e4-4c39-4737-801b-2250133670ba)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text "+" (at 56.3 120.3) (layer "F.SilkS") (tstamp a9ff0621-eacb-4187-ba89-29f236eec881)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
