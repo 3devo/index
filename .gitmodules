@@ -1,0 +1,4 @@
+[submodule "PCB/kicad_libraries"]
+	path = PCB/kicad_libraries
+	url = https://github.com/3devo/kicad_libraries/
+	branch = master

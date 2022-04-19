@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/workspaces/index/pnp/pcb/mobo/mobo.kicad_sch</source>
-    <date>Wed Mar 16 21:37:14 2022</date>
+    <date>Thu Mar 17 10:18:45 2022</date>
     <tool>Eeschema 6.0.2+dfsg-1~bpo11+1</tool>
     <textvar name="version">1.2.3</textvar>
     <sheet number="1" name="/" tstamps="/">

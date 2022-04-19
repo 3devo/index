@@ -54,38 +54,23 @@ outputs:
     comment: "Pick and place file, XYRS style"
     type: bom
     options:
-      output: '%f.XYRS'
-      units: mils
+      units: millimeters
       group_fields: []
       sort_style: ref
       use_aux_axis_as_origin: true
       ignore_dnf: false
-      footprint_populate_values: '0,1'
-      footprint_type_values: '1,2,0'
+      footprint_populate_values: 'no,yes'
       csv:
-        separator: '	'
         hide_pcb_info: true
         hide_stats_info: true
         hide_header: false
       columns:
         - field: References
-          name: Designator
-        - field: Footprint X
-          name: X-Loc
-        - field: Footprint Y
-          name: Y-Loc
-        - field: Footprint Rot
-          name: Rotation
-        - field: Footprint Side
-          name: Side
-        - field: Footprint Type
-          name: Type
-        - field: Footprint X-Size
-          name: X-Size
-        - field: Footprint Y-Size
-          name: Y-Size
         - field: Value
         - field: Footprint
+        - field: Footprint X
+        - field: Footprint Y
+        - field: Footprint Rot
+          name: Rotation 
         - field: Footprint Populate
           name: Populate
-        - field: MPN
