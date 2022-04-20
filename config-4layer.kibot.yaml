@@ -3,48 +3,56 @@ kibot:
   version: 1
 
 global:
-  output: '%f_v%r_%V_%i.%x' # {projectname}_v{version}_{outputtype}_{file_id}.{extension}
+  output: '%f_v%r%v_%i.%x'
+  # %f original pcb/sch file name without extension
+  # %r revision from pcb/sch metadata
+  # %v the file_id of the current variant, or the global variant if outside a variant scope.
+  # %i a contextual ID, depends on the output type
+  # %x a suitable extension for the output type
 
 variants:
-  - name: 'SR'
-    comment: 'GP20 Shredder'
+  - name: SR
+    comment: GP20 Shredder
     type: kibom
     variant: SR
+    file_id: _SR
 
-  - name: 'GR'
-    comment: 'GP20 Granulator'
+  - name: GR
+    comment: GP20 Granulator
     type: kibom
     variant: GR
+    file_id: _GR
 
 preflight:
   set_text_variables:
-    - variable: 'date'
-      command: 'git log -1 --format="%as" -- $KIBOT_SCH_NAME' #Last modification date of schematic file
-    - variable: 'version'
+    - variable: date
+      command: git log -1 --format="%as" -- $KIBOT_SCH_NAME #Last modification date of schematic file
+    - variable: version
       text: '1.2.4' #get from tag
-  run_erc: false
-  run_drc: false
-  check_zone_fills: true
-  ignore_unconnected: false
-  update_xml: true
-
+  update_xml: false #todo true
+  ignore_unconnected: false #todo see if it throws warning or error
+  run_erc: false  #todo true
+  fill_zones: true
+  run_drc: false  #todo true
+  
 outputs:
-  - name: 'ibom'
-    comment: 'Interactive Bill of Materials'
+  - name: ibom
+    comment: Interactive Bill of Materials (.HTML)
     type: ibom
     dir: Bill of materials
     options:
       dark_mode: true
       extra_fields: 'Partnumber'
+      #todo: correct variant/dnp handling
 
-  - name: 'bom'
-    comment: 'Bill of Materials'
+  - name: bom
+    comment: Bill of Materials (.XLSX)
     type: bom
     dir: Bill of materials
     options: 
       format: XLSX
       columns:
-        - Quantity Per PCB
+        - Quantity Per PCB #todo reduce to 'Quantity'?
         - References
         - Value
         - Footprint
@@ -53,17 +61,121 @@ outputs:
       xlsx:
         col_colors: false
         logo: false
-        title: 'Bill of materials'
+        title: Bill of materials
         max_col_width: 999
       count_smd_tht: true
       ref_separator: ','
-      exclude_filter: ''
+      exclude_filter: '' #Items must be specifically dnp'ed if excluded
 
-  - name: 'print_sch'
-    comment: "Print schematic (PDF)"
+  - name: pdf_sch_print
+    comment: Print schematic (.PDF)
     type: pdf_sch_print
-    dir: Schematic
-    #options:
-      #output: Schematic.pdf
+    dir: Schematic PDF
 
-      #dnf_filter: 'dnp'
+  - name: pdf_pcb_print
+    comment: Print layout (.PDF)
+    type: pdf_pcb_print
+    dir: Layout PDF
+    options:
+      separated: true
+      output: '%f_v%r%v_layout.%x' #Same as global naming, but with '_layout' instead of %i
+    layers:
+      - layer: F.Cu
+      - layer: In1.Cu #Ignored if not applicable
+      - layer: In2.Cu #Ignored if not applicable
+      - layer: B.Cu
+      - layer: F.SilkS
+      - layer: B.SilkS
+      - layer: F.Mask
+      - layer: B.Mask
+      - layer: F.Paste
+      - layer: B.Paste
+
+  - name: gerber
+    comment: Gerber files (.gbr)
+    type: gerber
+    dir: Gerbers
+    options:
+      exclude_edge_layer: true
+      use_aux_axis_as_origin: true
+      plot_footprint_refs: true
+      plot_footprint_values: true
+      tent_vias: true
+      line_width: 0.1
+      subtract_mask_from_silk: true
+      use_protel_extensions: false
+      gerber_precision: 4.6
+      create_gerber_job_file: false
+      use_gerber_x2_attributes: true
+      use_gerber_net_attributes: true
+
+    layers:
+      - layer: F.Cu
+        suffix: F_Cu
+      - layer: In1.Cu
+        suffix: In1_Cu
+      - layer: In2.Cu
+        suffix: In2_Cu
+      - layer: B.Cu
+        suffix: B_Cu
+      - layer: F.SilkS
+        suffix: F_SilkS
+      - layer: B.SilkS
+        suffix: B_SilkS
+      - layer: F.Mask
+        suffix: F_Mask
+      - layer: B.Mask
+        suffix: B_Mask
+      - layer: F.Paste
+        suffix: F_Paste
+      - layer: B.Paste
+        suffix: B_Paste
+      - layer: Edge.Cuts
+        suffix: Edge_Cuts
+
+  - name: excellon
+    comment: Excellon drill file (.drl)
+    type: excellon
+    dir: Gerbers
+    options:
+      metric_units: false
+      pth_and_npth_single_file: true
+
+  - name: gerbers
+    comment: Compress gerber files
+    type: compress
+    dir: Gerbers
+    options:
+      files:
+        - from_output: excellon
+        - from_output: gerber
+        - source: './Gerbers/**'
+
+  - name: pcbdraw_top
+    comment: Render top layer view
+    type: pcbdraw
+    dir: Renders
+    options:
+      format: png
+      bottom: false
+
+  - name: pcbdraw_bottom
+    comment: Render bottom layer view
+    type: pcbdraw
+    dir: Renders
+    options:
+      format: png
+      bottom: true
+
+  - name: position
+    comment: Position file (.CSV)
+    type: position
+    dir: Pick and place
+    options:
+      format: CSV
+
+  - name: step
+    comment: 3D model generation (.STEP)
+    type: step
+    dir: Renders
+    #todo: fix KISYS3DMOD expansion error
