@@ -4,10 +4,8 @@ on:
   release:
     types: [ published ]  
   workflow_dispatch:
+    #Add options?
     
-env:
-  time_zone: Europe/Amsterdam
-
 jobs:
   generate-artifacts:
     runs-on: ubuntu-latest
@@ -21,10 +19,6 @@ jobs:
 
     - name: Checkout Repository
       uses: actions/checkout@v2
-
-    - name: Get current date and time
-      id: date
-      run: echo "::set-output name=date::$(TZ='${{ env.time_zone }}' date +'%Y-%m-%d')"     
 
     - name: Run KiBot
       run: |

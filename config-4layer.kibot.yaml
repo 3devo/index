@@ -3,7 +3,7 @@ kibot:
   version: 1
 
 global:
-  output: '%f_v%r_%V_%i.%x' #projectname_version_outputtype_file_id.extension
+  output: '%f_v%r_%V_%i.%x' # {projectname}_v{version}_{outputtype}_{file_id}.{extension}
 
 variants:
   - name: 'SR'
@@ -21,13 +21,12 @@ preflight:
     - variable: 'date'
       command: 'git log -1 --format="%as" -- $KIBOT_SCH_NAME' #Last modification date of schematic file
     - variable: 'version'
-      text: '1.2.4' 
+      text: '1.2.4' #get from tag
   run_erc: false
   run_drc: false
   check_zone_fills: true
   ignore_unconnected: false
   update_xml: true
-  
 
 outputs:
   - name: 'ibom'
@@ -37,7 +36,6 @@ outputs:
     options:
       dark_mode: true
       extra_fields: 'Partnumber'
-
 
   - name: 'bom'
     comment: 'Bill of Materials'
@@ -59,5 +57,13 @@ outputs:
         max_col_width: 999
       count_smd_tht: true
       ref_separator: ','
+      exclude_filter: ''
+
+  - name: 'print_sch'
+    comment: "Print schematic (PDF)"
+    type: pdf_sch_print
+    dir: Schematic
+    #options:
+      #output: Schematic.pdf
 
       #dnf_filter: 'dnp'
