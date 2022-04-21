@@ -23,29 +23,24 @@ jobs:
     - name: Run KiBot
       run: |
         cd PCB/mobo
-        rm -rf export/
+        rm -rf ../../export
         kibot -c ../../config-4layer.kibot.yaml -e mobo.kicad_sch -b mobo.kicad_pcb -d ../../export
 
-    # Splitting this out to ensure a failed kibot run will mark a check as failed.
-    - name: Prepare gerber
-      run: |
-        cd pnp/pcb/mobo/export/Gerbers
-        zip -r -j pnp_mobo_gerbers.zip *
         
     - name: Prepare Output Artifact
       run: |
-        cd pnp/pcb/mobo/export/
-        zip -r -j ../pnp_mobo_files.zip *
+        cd ../../export
+        zip -r -j pnp_mobo_files.zip *
 
     - name: Upload Artifacts to Workflow Run
       uses: actions/upload-artifact@v2
       with:
-        name: pnp_mobo_output
-        path: pnp/pcb/mobo/export
+        name: pnp_mobo_files
+        path: export
 
     - name: Upload Artifacts to Release
       uses: softprops/action-gh-release@v1
       if: github.event_name == 'release'
       with:
         files: |
-          pnp/pcb/mobo/pnp_mobo_files.zip
+          pnp_mobo_files.zip
