@@ -29,9 +29,8 @@ jobs:
         
     - name: Prepare Output Artifact
       run: |
-        cd ../../export
+        cd export
         zip -r pnp_mobo_files.zip *
-        cd ..
 
     - name: Upload Artifacts to Workflow Run
       uses: actions/upload-artifact@v2
