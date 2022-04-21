@@ -36,7 +36,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: pnp_mobo_files
-        path: export
+        path: export/pnp_mobo_files.zip
 
     - name: Upload Artifacts to Release
       uses: softprops/action-gh-release@v1
