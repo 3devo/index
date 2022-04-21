@@ -43,4 +43,4 @@ jobs:
       if: github.event_name == 'release'
       with:
         files: |
-          pnp_mobo_files.zip
+          export/pnp_mobo_files.zip
